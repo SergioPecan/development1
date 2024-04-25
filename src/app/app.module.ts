@@ -13,7 +13,9 @@ import { LoginComponent } from './iam/pages/login/login.component';
 import { SingupComponent } from './iam/pages/singup/singup.component';
 import {NgOptimizedImage} from "@angular/common";
 import { SmoothScrollService } from './public/services/smooth-scroll.service';
-import { FooterComponent } from './public/pages/footer/footer.component'; // Importa el servicio
+import { FooterComponent } from './public/pages/footer/footer.component';
+import { HeaderComponent } from './public/pages/header/header.component';
+import { HomepageComponent } from './public/pages/homepage/homepage.component'; // Importa el servicio
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { FooterComponent } from './public/pages/footer/footer.component'; // Imp
     LoginComponent,
     SingupComponent,
     FooterComponent,
+    HeaderComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,

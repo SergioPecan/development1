@@ -9,18 +9,12 @@ import { SmoothScrollService } from './public/services/smooth-scroll.service';
 })
 export class AppComponent {
   title = 'AgroGes';
-  options = {};
+  options = [{ path: '/home', title: 'Home'},
+    {path: '/login', title: 'Login'},
+    {path: '/signup', title: 'Signup'},
+  ]
 
-  constructor(private smoothScrollService: SmoothScrollService) {}
 
-  onAnchorClick(event: MouseEvent): void {
-    const target = event.target as HTMLElement;
-    if (target.tagName.toLowerCase() === 'a') {
-      event.preventDefault();
-      const href = target.getAttribute('href');
-      if (href && href.startsWith('#')) {
-        this.smoothScrollService.scrollToElement(href.slice(1));
-      }
-    }
-  }
+
+
 }

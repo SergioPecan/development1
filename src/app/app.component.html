@@ -1,24 +1,2 @@
-<header>
-  <nav>
-    <ul class="nav-buttons">
-      <li><a routerLink="/public/pages/signup">Sign Up</a></li>
-      <li><a routerLink="/public/pages/login">Log In</a></li>
-    </ul>
-    <ul>
-      <li><a href="#home" (click)="onAnchorClick($event)">Home</a></li>
-      <li><a href="#services" (click)="onAnchorClick($event)">Services</a></li>
-      <li><a href="#team" (click)="onAnchorClick($event)">Team</a></li>
-      <li><a href="#pricing" (click)="onAnchorClick($event)">Pricing</a></li>
-      <li><a href="#contact" (click)="onAnchorClick($event)">Contact</a></li>
-    </ul>
-  </nav>
-</header>
 
-<main>
-  <app-home id="home"></app-home>
-  <app-services id="services"></app-services>
-  <app-team id="team"></app-team>
-  <app-pricing id="pricing"></app-pricing>
-  <app-contact id="contact"></app-contact>
-  <app-footer id="footer"></app-footer>
-</main>
+<router-outlet></router-outlet>

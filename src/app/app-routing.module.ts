@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './public/pages/home/home.component';
-import { ServicesComponent } from './public/pages/services/services.component';
-import { TeamComponent } from './public/pages/team/team.component';
-import { PricingComponent } from './public/pages/pricing/pricing.component';
-import { ContactComponent } from './public/pages/contact/contact.component';
+import { HomepageComponent } from './public/pages/homepage/homepage.component';
 import { LoginComponent } from './iam/pages/login/login.component';
-import { SingupComponent } from "./iam/pages/singup/singup.component";
-
+import { SingupComponent } from './iam/pages/singup/singup.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home' , pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomepageComponent },
+  { path: 'login', component: LoginComponent },
+  {path: 'signup', component: SingupComponent},
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({
