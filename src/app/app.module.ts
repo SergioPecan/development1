@@ -9,8 +9,12 @@ import { ServicesComponent } from './public/pages/services/services.component';
 import { TeamComponent } from './public/pages/team/team.component';
 import { PricingComponent } from './public/pages/pricing/pricing.component';
 import { ContactComponent } from './public/pages/contact/contact.component';
-import { LoginComponent } from './public/pages/login/login.component';
-import { SingupComponent } from './public/pages/singup/singup.component';
+import { LoginComponent } from './iam/pages/login/login.component';
+import { SingupComponent } from './iam/pages/singup/singup.component';
+import {NgOptimizedImage} from "@angular/common";
+import { SmoothScrollService } from './public/services/smooth-scroll.service';
+import { FooterComponent } from './public/pages/footer/footer.component'; // Importa el servicio
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +24,8 @@ import { SingupComponent } from './public/pages/singup/singup.component';
     PricingComponent,
     ContactComponent,
     LoginComponent,
-    SingupComponent
+    SingupComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,8 +33,9 @@ import { SingupComponent } from './public/pages/singup/singup.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgOptimizedImage,
   ],
-  providers: [],
+  providers: [SmoothScrollService], // Añade el servicio a los proveedores
   bootstrap: [AppComponent]
 })
 export class AppModule { }

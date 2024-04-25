@@ -1,0 +1,57 @@
+/* Estilos para la sección del banner */
+section.banner {
+  background: linear-gradient(to left, #00A6A6, #D9EAE5); /* Fondo degradado del banner */
+  padding: 3rem 0; /* Relleno del banner */
+}
+
+/* Estilos para el contenedor del banner */
+.containerB {
+  width: 90%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  display: grid; /* Usa un diseño de cuadrícula para el contenedor */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Distribuye los elementos de forma automática */
+  grid-gap: 2rem; /* Espacio entre los elementos de la cuadrícula */
+}
+
+/* Estilos para la primera columna del banner */
+.col1 {
+  display: flex; /* Hace que los elementos de la columna se muestren en línea */
+  align-items: center; /* Alinea los elementos verticalmente */
+  justify-content: center; /* Alinea los elementos horizontalmente */
+}
+
+/* Estilos para la imagen del banner */
+.imgBanner {
+  width: 70%; /* Ancho de la imagen */
+}
+
+/* Estilos para la segunda columna del banner */
+.col2 {
+  padding: 1rem 2rem; /* Relleno de la segunda columna */
+  display: flex; /* Hace que los elementos de la columna se muestren en línea */
+  justify-content: center; /* Alinea los elementos horizontalmente */
+  flex-direction: column; /* Muestra los elementos en columna */
+}
+
+/* Estilos para el título del banner */
+h1 {
+  font-size: 2rem; /* Tamaño del título */
+  color: #00576F; /* Color del título */
+}
+
+/* Estilos para el texto del banner */
+#txtBanner {
+  margin: 2rem 0; /* Margen del texto */
+  font-size: 1.3rem; /* Tamaño del texto */
+  line-height: 2rem; /* Altura de línea del texto */
+  text-align: justify; /* Alineación justificada del texto */
+}
+
+/* Estilos para el botón del banner */
+.btnBanner {
+  background: #00576F; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 10px 20px; /* Relleno del botón */
+  border-radius: 20px; /* Borde redondeado del botón */
+  text-decoration: none; /* Elimina la decoración de texto */
+}
