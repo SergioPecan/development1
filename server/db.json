@@ -2,15 +2,10 @@
   "usuarios": [
     {
       "id": 1,
-      "nombre": "Juan",
-      "correo": "juan@example.com",
-      "contraseña": "contraseñaSegura123"
-    },
-    {
-      "id": 2,
-      "nombre": "Ana",
-      "correo": "ana@example.com",
-      "contraseña": "otraContraseñaSegura456"
+      "email": "sergiosad123@gmail.com",
+      "password": "sergio",
+      "phone": "964457986",
+      "ruc": "964457986"
     }
 
   ]

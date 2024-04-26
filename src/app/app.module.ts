@@ -16,6 +16,8 @@ import { SmoothScrollService } from './public/services/smooth-scroll.service';
 import { FooterComponent } from './public/pages/footer/footer.component';
 import { HeaderComponent } from './public/pages/header/header.component';
 import { HomepageComponent } from './public/pages/homepage/homepage.component'; // Importa el servicio
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { HomepageComponent } from './public/pages/homepage/homepage.component'; 
     FooterComponent,
     HeaderComponent,
     HomepageComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,8 @@ import { HomepageComponent } from './public/pages/homepage/homepage.component'; 
     FormsModule,
     ReactiveFormsModule,
     NgOptimizedImage,
+    MatSnackBarModule,
+    BrowserAnimationsModule
   ],
   providers: [SmoothScrollService], // Añade el servicio a los proveedores
   bootstrap: [AppComponent]

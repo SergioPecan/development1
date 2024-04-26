@@ -1,7 +1,8 @@
 // user.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from '../entity/user.entity';
+import { User } from '../model/user.entity';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +15,10 @@ export class UserService {
   createUser(user: User) {
     return this.http.post<User>(this.apiUrl, user);
   }
+  login(ruc: string, password: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}?ruc=${ruc}&password=${password}`);
+  }
+
+
 }
 

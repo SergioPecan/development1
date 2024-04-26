@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { User} from "../../entity/user.entity";
+import { User} from "../../model/user.entity";
 import { UserService } from "../../service/user.service";
 @Component({
   selector: 'app-singup',

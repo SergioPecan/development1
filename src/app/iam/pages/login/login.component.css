@@ -60,3 +60,23 @@
   text-align: center;
   color: #808080; /* Color de texto gris */
 }
+
+.login-snackbar-success {
+  background-color: #4053ff;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.login-snackbar-error
+{
+  background-color: #ff4081;
+  color: white;
+  position: fixed;
+
+  transform: translate(-50%, -50%);
+}
+
