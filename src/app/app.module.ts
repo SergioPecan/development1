@@ -15,7 +15,8 @@ import {NgOptimizedImage} from "@angular/common";
 import { SmoothScrollService } from './public/services/smooth-scroll.service';
 import { FooterComponent } from './public/pages/footer/footer.component';
 import { HeaderComponent } from './public/pages/header/header.component';
-import { HomepageComponent } from './public/pages/homepage/homepage.component'; // Importa el servicio
+import { HomepageComponent } from './public/pages/homepage/homepage.component';
+import { HomeappComponent } from './farmer/pages/homeapp/homeapp.component'; // Importa el servicio
 
 @NgModule({
   declarations: [
@@ -30,6 +31,8 @@ import { HomepageComponent } from './public/pages/homepage/homepage.component'; 
     FooterComponent,
     HeaderComponent,
     HomepageComponent,
+    HomeappComponent,
+
   ],
   imports: [
     BrowserModule,

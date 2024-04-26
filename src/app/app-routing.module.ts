@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'home', component: HomepageComponent },
   { path: 'login', component: LoginComponent },
   {path: 'signup', component: SingupComponent},
-  { path: '**', redirectTo: 'home' }
+  { path: '**', redirectTo: 'home'}
 ];
 
 @NgModule({
