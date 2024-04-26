@@ -1,1 +1,13 @@
-<p>singup works!</p>
+<div class="register-container">
+  <h1 class="title">AGROGES</h1>
+  <a href="#" class="homepage-link">Homepage</a>
+  <img class="logo" src="./assets/Images/Agroges_logo.png" alt="Logo">
+  <input class="input-field" [(ngModel)]="ruc" type="text" placeholder="RUC/DNI">
+  <input class="input-field" [(ngModel)]="password" type="password" placeholder="Contraseña">
+  <input class="input-field" [(ngModel)]="confirmPassword" type="password" placeholder="Confirmar Contraseña">
+  <input class="input-field" [(ngModel)]="email" type="email" placeholder="Correlo Electronico">
+  <input class="input-field" [(ngModel)]="phone" type="phone" placeholder="telefono">
+  <button class="register-button" (click)="register()">Registrarse</button>
+  <p routerLink="/login"
+     class="login-link">o inicie sesión</p>
+</div>
