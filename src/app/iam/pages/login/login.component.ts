@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { UserService } from "../../service/user.service";
-import { User} from "../../entity/user.entity";
+import { User } from "../../entity/user.entity";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
