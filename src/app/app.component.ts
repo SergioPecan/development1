@@ -18,7 +18,7 @@ export class AppComponent {
     {path: '/signup', title: 'Signup'},
     {path: '/profile', title: 'Profile'},
     {path: '/admin', title: 'Admin'},
-    {path: '/mod', title: 'Moderator'},
+
 {path: '/user', title: 'User'},
 
   ]

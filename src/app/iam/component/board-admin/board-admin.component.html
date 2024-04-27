@@ -1,6 +1,13 @@
-<div class="container">
-  <header class="jumbotron">
-    <p>{{ content }}</p>
-  </header>
-</div>
+<header>
+  <div class="toolbar">
+    <div class="toolbar-items">
+      <a routerLink="/profile">Profile</a>
+      <a routerLink="/create-admin">Create Admin</a>
+      <a routerLink="/user">User</a>
+    </div>
+  </div>
+</header>
 
+<main>
+  <router-outlet></router-outlet>
+</main>

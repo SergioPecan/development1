@@ -17,5 +17,13 @@
       "IsAdmin": false,
       "token": ""
     }
+  ],
+  "admin": [
+    {
+      "id": 0,
+      "username": "admin",
+      "password": "admin"
+    }
+
   ]
 }
