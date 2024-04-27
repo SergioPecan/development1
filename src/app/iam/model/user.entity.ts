@@ -4,4 +4,6 @@ export interface User{
   password: string;
   phone: string;
   ruc: string;
+  IsAdmin: boolean;
+  token: string;
 }

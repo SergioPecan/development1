@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { User} from "../../model/user.entity";
-import { UserService } from "../../service/user.service";
+import { AuthService } from "../../service/auth.service";
 @Component({
   selector: 'app-singup',
   templateUrl: './singup.component.html',
   styleUrl: './singup.component.css'
 })
 export class SingupComponent {
-  constructor(private userService: UserService) {}
+  constructor(private userService: AuthService) {}
 
 
   email = '';
@@ -21,7 +21,9 @@ export class SingupComponent {
     email: this.email,
     password: this.password,
     phone: this.phone,
-    ruc: this.ruc
+    ruc: this.ruc,
+    IsAdmin: false,
+    token: ''
   };
 
 

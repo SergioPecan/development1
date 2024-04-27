@@ -18,6 +18,10 @@ import { HeaderComponent } from './public/pages/header/header.component';
 import { HomepageComponent } from './public/pages/homepage/homepage.component'; // Importa el servicio
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BoardUserComponent } from './iam/component/board-user/board-user.component';
+import { BoardAdminComponent } from './iam/component/board-admin/board-admin.component';
+import { BoardModeratorComponent } from './iam/component/board-moderator/board-moderator.component';
+import { ProfileComponent } from './iam/component/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     HeaderComponent,
     HomepageComponent,
+    BoardUserComponent,
+    BoardAdminComponent,
+    BoardModeratorComponent,
+    ProfileComponent,
 
   ],
   imports: [

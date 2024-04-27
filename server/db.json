@@ -5,8 +5,17 @@
       "email": "sergiosad123@gmail.com",
       "password": "sergio",
       "phone": "964457986",
-      "ruc": "964457986"
+      "ruc": "964457986",
+      "token": ""
+    },
+    {
+      "id": 2,
+      "email": "sergiosad123@gmail.com",
+      "password": "pecan",
+      "phone": "964457986",
+      "ruc": "12345678912",
+      "IsAdmin": false,
+      "token": ""
     }
-
   ]
 }
