@@ -1,17 +1,37 @@
-.toolbar {
-  width: 100%;
-  background-color: #f8f9fa;
-  padding: 10px 0;
-}
-
-.toolbar-items {
+.main-wrapper {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 20px;
+  height: 100vh;
 }
 
-.toolbar-items a {
-  margin-left: 20px;
-  color: #333;
+.sidebar {
+  background-color: #2d3748;
+  color: white;
+  width: 250px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background-color: #4a5568;
+  border-radius: 50%;
+  width: 40px;
+  height:40px;
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
+
+.nav-item {
+  display: block;
+  padding: 10px;
+  color: white;
   text-decoration: none;
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 20px;
 }

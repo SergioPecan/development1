@@ -1,14 +1,6 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "email": "sergiosad123@gmail.com",
-      "password": "sergio",
-      "phone": "964457986",
-      "ruc": "964457986",
-      "token": ""
-    },
-    {
       "id": 2,
       "email": "sergiosad123@gmail.com",
       "password": "pecan",
@@ -22,8 +14,12 @@
     {
       "id": 0,
       "username": "admin",
+      "password": "pecan"
+    },
+    {
+      "id": 1,
+      "username": "admin",
       "password": "admin"
     }
-
   ]
 }

@@ -1,13 +1,26 @@
 <header>
-  <div class="toolbar">
-    <div class="toolbar-items">
-      <a routerLink="/profile">Profile</a>
-      <a routerLink="/create-admin">Create Admin</a>
-      <a routerLink="/user">User</a>
+  <div class="main-wrapper">
+    <div class="sidebar">
+      <a  class="brand">
+        <div class="logo">
+          <i class="fas fa-user-shield"></i>
+        </div>
+        Bienvenido : {{currentAdmin?.username}}
+      </a>
+      <nav class="nav">
+        <a [routerLink]="['/admin', 'profile']" class="nav-item">Profile</a>
+        <a [routerLink]="['/admin', 'create-user']" class="nav-item">Users</a>
+        <a [routerLink]="['/admin', 'create-admin']" class="nav-item">Management Admin</a>
+      </nav>
+    </div>
+    <div class="content-area">
+      <h1>Dashboard</h1>
+      <main>
+        <router-outlet></router-outlet>
+      </main>
     </div>
   </div>
+
 </header>
 
-<main>
-  <router-outlet></router-outlet>
-</main>
+

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../../service/user.service';
+import {AuthService} from "../../service/auth.service";
+import {Admin} from "../../model/admin.entity";
 
 @Component({
   selector: 'app-board-admin',
@@ -7,18 +8,13 @@ import { UserService } from '../../service/user.service';
   styleUrls: ['./board-admin.component.css']
 })
 export class BoardAdminComponent implements OnInit {
-  content?: string;
-
-  constructor(private userService: UserService) { }
-
+  currentAdmin: Admin | null = null;
+  constructor(private authService: AuthService) { } // Inyecta el servicio de autenticación
   ngOnInit(): void {
-    this.userService.getAdminBoard().subscribe({
-      next: data => {
-        this.content = data;
-      },
-      error: err => {
-        this.content = JSON.parse(err.error).message;
-      }
+    this.authService.getCurrentAdmin().subscribe(admin => {
+      this.currentAdmin = admin;
+      console.log(admin)
     });
   }
+
 }

@@ -20,10 +20,12 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {RouterModule} from "@angular/router";
 import { BoardAdminComponent } from './iam/component/board-admin/board-admin.component';
-import { ProfileComponent } from './iam/component/profile/profile.component';
+import { AdminProfileComponent } from './iam/component/profile/profile.component';
 import { CreateAdminComponent } from './iam/component/create-admin/create-admin.component';
 import { UserComponent } from './iam/component/user/user.component';
 import { LoginAdminComponent } from './iam/component/login-admin/login-admin.component';
+import { CreateUserComponent } from './iam/component/create-user/create-user.component';
+
 @NgModule({
   declarations: [
 
@@ -40,14 +42,16 @@ import { LoginAdminComponent } from './iam/component/login-admin/login-admin.com
     HomepageComponent,
 
     BoardAdminComponent,
-      ProfileComponent,
+    AdminProfileComponent,
       CreateAdminComponent,
       UserComponent,
       LoginAdminComponent,
+      CreateUserComponent,
 
 
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -57,6 +61,8 @@ import { LoginAdminComponent } from './iam/component/login-admin/login-admin.com
     MatSnackBarModule,
     BrowserAnimationsModule,
     RouterModule,
+
+
 
   ],
   providers: [SmoothScrollService], // Añade el servicio a los proveedores

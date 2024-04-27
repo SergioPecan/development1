@@ -1,0 +1,10 @@
+<ul class="users-list">
+  <li *ngFor="let user of users">
+    <p>RUC: {{user.ruc}}</p>
+    <p>Contraseña: {{user.password}}</p>
+    <p>Correo: {{user.email}}</p>
+    <p>Teléfono: {{user.phone}}</p>
+    <button (click)="deleteUser(user.id)">Eliminar</button>
+  </li>
+</ul>
+

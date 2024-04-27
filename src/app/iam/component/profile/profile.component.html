@@ -1,1 +1,14 @@
-<p>profile works!</p>
+<div class="admin-profile">
+  <h2>Perfil de Administrador</h2>
+  <form #adminForm="ngForm" (ngSubmit)="updateAdmin(adminForm.value.username, adminForm.value.password)">
+    <div class="form-group">
+      <label for="username">Nombre de usuario</label>
+      <input type="text" id="username" [(ngModel)]="currentAdmin.username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Contraseña</label>
+      <input type="text" id="password" [(ngModel)]="currentAdmin.password" name="password" required>
+    </div>
+    <button type="submit">Actualizar</button>
+  </form>
+</div>
