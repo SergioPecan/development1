@@ -7,6 +7,28 @@
       "phone": "964457986",
       "ruc": "964457986"
     }
-
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Carlos Arian",
+      "lastName": "Guevara Aguirre",
+      "dni": "72188538",
+      "charge": "Worker"
+    },
+    {
+      "id": 2,
+      "firstName": "Fabio Alejandro",
+      "lastName": "Guiopp Saavedra",
+      "dni": "72188541",
+      "charge": "Worker"
+    },
+    {
+      "id": 3,
+      "firstName": "Marcos Alejo",
+      "lastName": "Pozo Palma",
+      "dni": "20738481",
+      "charge": "Worker"
+    }
   ]
 }
