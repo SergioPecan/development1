@@ -1,0 +1,11 @@
+.mat-spacer {
+  display: flex;
+  flex-direction: column;
+}
+.botoneshomeapp{
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+
+
+}

@@ -1,0 +1,59 @@
+
+/* Estilos para la sección de servicios */
+.services {
+  padding: 3rem 0; /* Relleno de la sección de servicios */
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+/* Estilos para el subtítulo de servicios */
+.subServices {
+  text-align: center; /* Alinea el texto al centro */
+  padding-bottom: 3rem; /* Espacio inferior del subtítulo */
+  color: #0074E4; /* Color del texto */
+}
+
+/* Estilos para el contenedor de servicios */
+.containerS {
+  width: 90%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  display: grid; /* Usa un diseño de cuadrícula para el contenedor */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Distribuye los elementos de forma automática */
+  grid-gap: 3rem; /* Espacio entre los elementos de la cuadrícula */
+}
+
+/* Estilos para los cuadros de servicios */
+.boxS {
+  padding: 2rem; /* Relleno de los cuadros */
+  display: flex; /* Hace que los elementos de los cuadros se muestren en línea */
+  flex-direction: column; /* Muestra los elementos en columna */
+  align-items: center; /* Alinea los elementos al centro */
+  justify-content: center; /* Alinea los elementos al centro */
+  box-shadow: 0px 0px 55px 5px rgba(0, 0, 255, 0.2); /* Sombra de los cuadros */
+  border-radius: 10px; /* Borde redondeado de los cuadros */
+}
+
+/* Estilos para las imágenes de los cuadros de servicios */
+.boxS img {
+  width: 300px; /* Ancho de las imágenes */
+  margin-bottom: 1rem; /* Margen inferior de las imágenes */
+}
+
+/* Estilos para los títulos de los cuadros de servicios */
+h3 {
+  color: #00576F; /* Color del título */
+  font-size: 1.5rem; /* Tamaño del título */
+  margin-bottom: 1rem; /* Margen inferior del título */
+}
+
+/* Estilos para los textos de los cuadros de servicios */
+.boxS p {
+  text-align: justify; /* Alineación justificada del texto */
+  font-size: 1rem; /* Tamaño del texto */
+}
+
+/* Estilos para el subtítulo de servicios */
+.subServices h2 {
+  color: #00576F; /* Color del subtítulo */
+  font-size: 2rem; /* Tamaño del subtítulo */
+  margin-bottom: 1.5rem; /* Margen inferior del subtítulo */
+}

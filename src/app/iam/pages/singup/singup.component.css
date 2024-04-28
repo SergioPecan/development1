@@ -1,0 +1,62 @@
+/* register.component.css */
+.register-container {
+  background-color: #FFFFFF; /* Color de fondo blanco */
+  width: 500px; /* Ajusta esto según tus necesidades */
+  padding: 100px;
+  border-radius: 10px; /* Bordes redondeados */
+}
+.homepage-link {
+  position: relative;
+  font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+
+  color: #fff;
+  text-align: left;
+
+  width: 7.5rem; /* Ajusta el ancho del botón */
+  height: 2.5rem; /* Ajusta la altura del botón */
+  z-index: 1;
+  cursor: pointer;
+  border: 0;
+  padding: 0.2rem 0.1rem 0.25rem 1rem; /* Ajusta el padding */
+  background-color: #2e51cd;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.title {
+  color: #008000; /* Color de texto verde */
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Ajusta esto según tus necesidades */
+}
+
+.input-field {
+  width: 100%;
+  padding: 30px;
+  margin: 20px 0;
+  border: 1px solid #808080; /* Borde gris */
+  border-radius: 5px; /* Bordes de entrada redondeados */
+}
+
+.register-button {
+  width: 100%;
+  padding: 20px;
+  background-color: #008000; /* Color de fondo verde */
+  color: white; /* Color de texto blanco */
+  border: none;
+  border-radius: 5px; /* Bordes de botón redondeados */
+  cursor: pointer;
+}
+
+.login-link {
+  text-align: center;
+  color: #808080; /* Color de texto gris */
+}

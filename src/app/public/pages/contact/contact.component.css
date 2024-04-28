@@ -1,0 +1,94 @@
+
+
+
+
+/* Estilos para la sección de contacto */
+.contact {
+  background-color: #FFFFFF; /* Color de fondo */
+  padding: 3rem 0; /* Relleno */
+  text-align: center; /* Alineación del texto al centro */
+}
+
+/* Estilos para el contenedor de la sección de contacto */
+.contact-container {
+  width: 90%; /* Ancho del contenedor */
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilos para el título de la sección de contacto */
+.contact-title {
+  color: #00576F; /* Color del título */
+  font-size: 2rem; /* Tamaño del título */
+  margin-bottom: 2rem; /* Margen inferior */
+}
+
+/* Estilos para los campos de formulario */
+.form-group {
+  margin-bottom: 1.5rem; /* Margen inferior */
+  text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilos para las etiquetas de formulario */
+.form-group label {
+  display: block; /* Mostrar como bloque */
+  margin-bottom: 0.5rem; /* Margen inferior */
+}
+
+/* Estilos para los campos de entrada */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%; /* Ancho completo */
+  padding: 0.5rem; /* Relleno */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Borde redondeado */
+}
+
+/* Estilos para el botón de envío */
+form button[type="submit"] {
+  background-color: #00576F; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 0.5rem 2rem; /* Relleno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cursor de puntero */
+  transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+/* Estilos para el botón de envío al pasar el ratón */
+form button[type="submit"]:hover {
+  background-color: #003A4E; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el mensaje de éxito */
+#mensaje-exito {
+  display: none; /* Ocultar por defecto */
+  margin-top: 1rem; /* Margen superior */
+  color: #008000; /* Color del texto */
+}
+.nav-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.nav-buttons li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.nav-buttons li a {
+  display: inline-block;
+  padding: 5px 20px; /* Modificado el valor del padding vertical */
+  line-height: 2; /* Reducir la altura del texto dentro del botón */
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-buttons li a:hover {
+  background-color: #555;
+}

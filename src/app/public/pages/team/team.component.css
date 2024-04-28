@@ -1,0 +1,51 @@
+
+/* Estilos para la sección de equipo */
+section.team {
+  background: linear-gradient(to left, #FFFFFF, #00576F); /* Fondo degradado de la sección de equipo */
+  padding: 3rem 0; /* Relleno de la sección de equipo */
+  display: flex; /* Hace que los elementos de la sección se muestren en línea */
+  justify-content: center; /* Alinea los elementos horizontalmente */
+  align-items: center; /* Alinea los elementos verticalmente */
+}
+
+/* Estilos para el contenedor de equipo */
+.containerE {
+  width: 90%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  display: grid; /* Usa un diseño de cuadrícula para el contenedor */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Distribuye los elementos de forma automática */
+  grid-gap: 2rem; /* Espacio entre los elementos de la cuadrícula */
+}
+
+/* Estilos para los cuadros de equipo */
+.boxE {
+  padding: 1rem 2rem; /* Relleno de los cuadros */
+  display: flex; /* Hace que los elementos de los cuadros se muestren en línea */
+  justify-content: center; /* Alinea los elementos horizontalmente */
+  flex-direction: column; /* Muestra los elementos en columna */
+  text-align: center; /* Alineación del texto al centro */
+  box-shadow: 0px 0px 55px 5px rgba(0, 255, 0, 0.2); /* Sombra de los cuadros */
+}
+
+/* Estilos para la imagen de equipo */
+.imgTeam {
+  width: 70%; /* Ancho de la imagen */
+  align-self: center; /* Alinea la imagen al centro */
+}
+
+/* Estilos para el título de equipo */
+h1 {
+  font-size: 2rem; /* Tamaño del título */
+  color: #00576F; /* Color del título */
+  margin-top: 1rem; /* Margen superior del título */
+}
+
+/* Estilos para el texto de equipo */
+#txtEquipo {
+  margin: 2rem 0; /* Margen del texto */
+  font-size: 1.3rem; /* Tamaño del texto */
+  line-height: 2rem; /* Altura de línea del texto */
+  text-align: justify; /* Alineación justificada del texto */
+}
+
+

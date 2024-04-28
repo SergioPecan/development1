@@ -1,0 +1,11 @@
+
+<div class="login-container">
+  <a href="#" class="homepage-link">Homepage</a>
+  <h1 class="title">AGROGES</h1>
+  <img class="logo" src="./assets/Images/Agroges_logo.png" alt="Logo">
+  <input class="input-field" [(ngModel)]="ruc" type="text" placeholder="RUC/DNI">
+  <input class="input-field" [(ngModel)]="password" type="password" placeholder="Contraseña">
+  <button class="login-button" (click)="login()">Iniciar sesión</button>
+  <p routerLink="/signup" class="register-link">o regístrese</p>
+</div>
+
