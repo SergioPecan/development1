@@ -21,7 +21,8 @@ import { FinanceComponent } from './farmer/pages/finance/finance.component';
 import { CropComponent } from './farmer/pages/crop/crop.component';
 import { EmployeeComponent } from './farmer/pages/employee/employee.component';
 import {MatToolbar} from "@angular/material/toolbar";
-import {MatAnchor} from "@angular/material/button"; // Importa el servicio
+import {MatAnchor} from "@angular/material/button";
+import { CalendarComponent } from './farmer/pages/calendar/calendar.component'; // Importa el servicio
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import {MatAnchor} from "@angular/material/button"; // Importa el servicio
     FinanceComponent,
     CropComponent,
     EmployeeComponent,
+    CalendarComponent,
 
   ],
   imports: [

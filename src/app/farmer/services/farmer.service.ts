@@ -8,6 +8,7 @@ import {Observable} from "rxjs";
 export class FarmerService {
 
   constructor(private http:HttpClient) {
+    //DB='http://localhost:3000';
   }
   getdata():Observable<any[]>{
     return this.http.get<any[]>('https://localhost:3000');

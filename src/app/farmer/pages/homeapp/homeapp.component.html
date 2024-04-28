@@ -1,4 +1,22 @@
-<h1>La finca</h1>
 
 
-<a mat-button class="botoneshomeapp" *ngFor="let option of options2"[routerLink]="option.path">{{option.title}}</a>
+<div class="homeappini">
+  <div class="headshomeapp">
+    <h1 class="titulohomeapp">La finca</h1>
+     <h2 class="usuariocrop">Ruc</h2>
+  </div>
+
+
+  <div class=ordenarhomeapp>
+    <div>
+      <a mat-button class="botoneshomeapp" *ngFor="let option of options2" [routerLink]="option.path">{{option.title}}</a>
+    </div>
+    <div class="news">
+
+    </div>
+
+
+  </div>
+
+
+</div>

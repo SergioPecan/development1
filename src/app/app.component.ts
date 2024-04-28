@@ -9,10 +9,12 @@ import { SmoothScrollService } from './public/services/smooth-scroll.service';
 })
 export class AppComponent {
   title = 'AgroGes';
-  options = [{ path: '/home', title: 'Home'},
+  options =
+    [{ path: '/home', title: 'Home'},
     {path: '/login', title: 'Login'},
     {path: '/signup', title: 'Signup'},
   ]
+
 
 
 

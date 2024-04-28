@@ -1,11 +1,37 @@
+.homeappini{
+  flex: 1 1 auto;
+}
 .mat-spacer {
   display: flex;
   flex-direction: column;
 }
 .botoneshomeapp{
-  display: flex;
-  flex-direction: column;
-  background-color: green;
+
+  width: 100%;
+  padding: 20px;
+  background-color: #008000; /* Color de fondo verde */
+  color: white; /* Color de texto blanco */
+  border: none;
+  border-radius: 10px; /* Bordes de botón redondeados */
+  cursor: pointer;
+  margin-bottom: 30px;
 
 
 }
+
+.ordenarhomeapp{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.headshomeapp{
+   display: flex;
+   flex-direction: row;
+ }
+.titulohomeapp{
+  flex: 1 1 auto;
+ color: #008000;
+}
+
+
