@@ -14,5 +14,4 @@ export class EmployeeService {
     return this.http.post<Employee>(this.apiUrl, employee);
   }
 
-
 }

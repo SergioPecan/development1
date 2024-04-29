@@ -18,6 +18,7 @@ import { HeaderComponent } from './public/pages/header/header.component';
 import { HomepageComponent } from './public/pages/homepage/homepage.component'; // Importa el servicio
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EmployeesListComponent } from './resources/pages/employees-list/employees-list.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     HeaderComponent,
     HomepageComponent,
+    EmployeesListComponent,
 
   ],
   imports: [
