@@ -21,3 +21,7 @@
   background-color: #008000;
   border-spacing: 100px;
 }
+.crop-wrapper{
+  width: 1024px;
+  margin: 50px auto;
+}

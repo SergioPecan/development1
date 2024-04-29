@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {CropEntity} from "../../entity/crop.entity";
 
 
@@ -8,10 +8,7 @@ import {CropEntity} from "../../entity/crop.entity";
   styleUrls: ['./crop.component.css']
 })
 export class CropComponent {
-  cropc:CropEntity;
 
-  constructor() {
-    this.cropc=new CropEntity()
-  }
+
 
 }

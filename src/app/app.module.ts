@@ -22,7 +22,10 @@ import { CropComponent } from './farmer/pages/crop/crop.component';
 import { EmployeeComponent } from './farmer/pages/employee/employee.component';
 import {MatToolbar} from "@angular/material/toolbar";
 import {MatAnchor} from "@angular/material/button";
-import { CalendarComponent } from './farmer/pages/calendar/calendar.component'; // Importa el servicio
+import { CalendarComponent } from './farmer/pages/calendar/calendar.component';
+import {MatCard} from "@angular/material/card";
+
+// Importa el servicio
 
 @NgModule({
   declarations: [
@@ -41,7 +44,7 @@ import { CalendarComponent } from './farmer/pages/calendar/calendar.component'; 
     FinanceComponent,
     CropComponent,
     EmployeeComponent,
-    CalendarComponent,
+    CalendarComponent
 
   ],
   imports: [
@@ -53,6 +56,7 @@ import { CalendarComponent } from './farmer/pages/calendar/calendar.component'; 
     NgOptimizedImage,
     MatToolbar,
     MatAnchor,
+    MatCard,
   ],
   providers: [SmoothScrollService], // Añade el servicio a los proveedores
   bootstrap: [AppComponent]

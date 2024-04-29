@@ -11,8 +11,17 @@
     <div>
       <a mat-button class="botoneshomeapp" *ngFor="let option of options2" [routerLink]="option.path">{{option.title}}</a>
     </div>
-    <div class="news">
+    <div class="weathernow">
+      <div class="tarjeta">
+        <h1>Clima Ahora</h1>
+        <div class="tarjetab">
+          <p class="infoweather">Temperatura {{temperature}}°</p>
+          <p class="infoweather">Sensacion termica: {{sensation}}</p>
+          <p class="infoweather">Humedad: {{humidity1}}%</p>
+          <p class="infoweather">Presion: {{pressure1}}</p>
 
+        </div>
+      </div>
     </div>
 
 

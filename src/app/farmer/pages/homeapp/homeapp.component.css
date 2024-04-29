@@ -8,7 +8,7 @@
 .botoneshomeapp{
 
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   background-color: #008000; /* Color de fondo verde */
   color: white; /* Color de texto blanco */
   border: none;
@@ -33,5 +33,17 @@
   flex: 1 1 auto;
  color: #008000;
 }
+.weathernow{
+  display: grid;
+  place-items: center;
+ margin-left: 100px;
+  background-color: rgb(135 206 235 / 50%) ;
+  border-radius: 30px;
+  padding: 20px 20px;
+}
 
+.infoweather{
+  font-family: "Times New Roman", Times, serif;
+
+}
 
