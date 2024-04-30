@@ -19,7 +19,8 @@ import { HomepageComponent } from './public/pages/homepage/homepage.component'; 
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EmployeesListComponent } from './resources/pages/employees-list/employees-list.component';
-import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
+import {MatCard, MatCardContent, MatCardHeader, MatCardImage, MatCardTitle} from "@angular/material/card";
+import {MatButton} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -49,7 +50,9 @@ import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/mat
     MatCard,
     MatCardTitle,
     MatCardContent,
-    MatCardHeader
+    MatCardHeader,
+    MatCardImage,
+    MatButton
   ],
   providers: [SmoothScrollService], // Añade el servicio a los proveedores
   bootstrap: [AppComponent]
