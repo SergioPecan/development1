@@ -1,21 +1,21 @@
 export class CropEntity {
-  codigo:string;
+  code:string;
   area:number;
-  producto:string;
-  localizacion:string;
-  estado:string;
-  costo:number;
-  retorno:number;
+  product:string;
+  localization:string;
+  status:string;
+  cost:number;
+  profit:number;
   ruc:number;
 
   constructor(){
-    this.codigo="";
+    this.code="";
     this.area=0;
-    this.producto="";
-    this.localizacion="";
-    this.estado="";
-    this.costo=0;
-    this.retorno=0;
+    this.product="";
+    this.localization="";
+    this.status="";
+    this.cost=0;
+    this.profit=0;
     this.ruc=0;
   }
 }

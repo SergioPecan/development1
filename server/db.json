@@ -11,20 +11,26 @@
       "nombre": "Ana",
       "correo": "ana@example.com",
       "contraseña": "otraContraseñaSegura456"
-    }
-
-  ],
-  "cultivosf":[
+    },
     {
-        "id": 1,
-        "codigo": "AC856",
-        "area": 100,
-        "producto": "Arroz",
-        "localizacion": "-11.911609261299382, -76.6633881401565",
-        "estado": "Germinacion",
-        "costo": 500,
-        "retorno": 1000,
-        "ruc": 26548796432
+      "id": 3,
+      "email": "asd@gmail.com",
+      "password": "234",
+      "phone": "9291232432",
+      "ruc": "213"
+    }
+  ],
+  "cultivosf": [
+    {
+      "id": 1,
+      "code": "AC856",
+      "area": 100,
+      "product": "Arroz",
+      "localization": "-11.911609261299382, -76.6633881401565",
+      "status": "Germinacion",
+      "cost": 500,
+      "profit": 1000,
+      "ruc": 26548796432
     }
   ]
 }

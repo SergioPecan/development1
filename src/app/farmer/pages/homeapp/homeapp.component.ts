@@ -15,7 +15,7 @@ export class HomeappComponent{
   sensation:number=0;
   humidity1:number=0;
   pressure1:number=0;
-  summ:string='';
+  summary:string='';
   iconurl:string='';
   city:string='Lima';
   units:string='metric';
@@ -39,7 +39,7 @@ export class HomeappComponent{
         this.sensation=this.myweather.main.feels_like;
         this.humidity1=this.myweather.main.humidity;
         this.pressure1=this.myweather.main.pressure;
-        this.summ=this.myweather.weather[0].main;
+        this.summary=this.myweather.weather[0].main;
 
 
         this.iconurl='https://openweathermap.org/img/wn/'+this.myweather.weather[0].icon+'@2x.png';

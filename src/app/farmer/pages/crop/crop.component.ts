@@ -10,11 +10,11 @@ import {CropEntity} from "../../entity/crop.entity";
   styleUrls: ['./crop.component.css']
 })
 export class CropComponent {
-  cultivos: CropEntity[] = []; // Arreglo para almacenar los datos del crop
+  crops: CropEntity[] = []; // Arreglo para almacenar los datos del crop
 
   constructor(private http: HttpClient) {
     this.http.get<CropEntity[]>('http://localhost:3000/cultivosf').subscribe(data => {
-      this.cultivos = data; //
+      this.crops = data; //
     });
   }
 }
