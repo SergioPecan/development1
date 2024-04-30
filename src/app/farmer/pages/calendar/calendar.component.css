@@ -1,0 +1,6 @@
+.tarjetascal{
+  width: 1024px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}

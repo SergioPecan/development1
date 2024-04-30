@@ -5,6 +5,8 @@ import { LoginComponent } from './iam/pages/login/login.component';
 import { SingupComponent } from './iam/pages/singup/singup.component';
 import {HomeappComponent} from "./farmer/pages/homeapp/homeapp.component";
 import {CropComponent} from "./farmer/pages/crop/crop.component";
+import {NewCropComponent} from "./farmer/pages/new-crop/new-crop.component";
+import {CalendarComponent} from "./farmer/pages/calendar/calendar.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home' , pathMatch: 'full'},
@@ -14,6 +16,9 @@ const routes: Routes = [
   //{ path: '**', redirectTo: 'home'},
   { path:'homeapp', component:HomeappComponent},
   { path:'crop', component:CropComponent},
+  {path:'new-crop',component:NewCropComponent},
+  {path:'calendar',component:CalendarComponent}
+
 
 
 ];

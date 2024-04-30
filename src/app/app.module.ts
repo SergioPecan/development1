@@ -24,6 +24,7 @@ import {MatToolbar} from "@angular/material/toolbar";
 import {MatAnchor} from "@angular/material/button";
 import { CalendarComponent } from './farmer/pages/calendar/calendar.component';
 import {MatCard} from "@angular/material/card";
+import { NewCropComponent } from './farmer/pages/new-crop/new-crop.component';
 
 
 // Importa el servicio
@@ -46,6 +47,7 @@ import {MatCard} from "@angular/material/card";
     CropComponent,
     EmployeeComponent,
     CalendarComponent,
+    NewCropComponent,
 
 
   ],
