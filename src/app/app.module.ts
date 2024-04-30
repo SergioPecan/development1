@@ -25,6 +25,7 @@ import {MatAnchor} from "@angular/material/button";
 import { CalendarComponent } from './farmer/pages/calendar/calendar.component';
 import {MatCard} from "@angular/material/card";
 
+
 // Importa el servicio
 
 @NgModule({
@@ -44,7 +45,8 @@ import {MatCard} from "@angular/material/card";
     FinanceComponent,
     CropComponent,
     EmployeeComponent,
-    CalendarComponent
+    CalendarComponent,
+
 
   ],
   imports: [

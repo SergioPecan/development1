@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 import { SmoothScrollService } from './public/services/smooth-scroll.service';
 
@@ -8,12 +7,17 @@ import { SmoothScrollService } from './public/services/smooth-scroll.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor() {
+    const fechaHoy: Date = new Date();
+  }
   title = 'AgroGes';
   options =
     [{ path: '/home', title: 'Home'},
     {path: '/login', title: 'Login'},
     {path: '/signup', title: 'Signup'},
   ]
+
 
 
 
