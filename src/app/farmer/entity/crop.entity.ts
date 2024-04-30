@@ -6,6 +6,7 @@ export class CropEntity {
   estado:string;
   costo:number;
   retorno:number;
+  ruc:number;
 
   constructor(){
     this.codigo="";
@@ -15,5 +16,6 @@ export class CropEntity {
     this.estado="";
     this.costo=0;
     this.retorno=0;
+    this.ruc=0;
   }
 }

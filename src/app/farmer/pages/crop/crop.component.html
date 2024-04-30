@@ -1,16 +1,21 @@
 <div class="crop-wrapper">
-<button>Agregar Cultivo</button>
+<button class="botcrop">Agregar Cultivo</button>
 
   <div class="doblecolumna">
-    <div class="columna1">
+      <div class="columna1" *ngFor="let cultivo of cultivos">
+        <p>Código: {{ cultivo.codigo }}</p>
+        <p>Área: {{ cultivo.area }} m2</p>
+        <p>Producto: {{ cultivo.producto }}</p>
+        <p>Localizacion:{{cultivo.ruc}}</p>
+      </div>
 
-        <p>Área:</p>
-        <p>Producto</p>
-    </div>
-    <div class="columna2">
-        <p>Estado</p>
-        <p>Costo</p>
-        <p>Retorno</p>
+
+
+    <div class="columna2" *ngFor="let cultivo of cultivos">
+
+      <p>Estado:{{cultivo.estado}}</p>
+      <p>Costo: ${{cultivo.costo}}</p>
+      <p>Retorno: ${{cultivo.retorno}}</p>
     </div>
   </div>
 

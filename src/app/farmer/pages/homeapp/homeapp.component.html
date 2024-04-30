@@ -1,9 +1,9 @@
 
 
-<div class="homeappini">
-  <div class="headshomeapp">
-    <h1 class="titulohomeapp">La finca</h1>
-     <h2 class="usuariocrop">Ruc</h2>
+<div class="homeappini" >
+  <div class="headshomeapp"*ngFor="let cultivo of cultivos">
+    <h1 class="titulohomeapp">La Finca</h1>
+   <h2 class="usuariocrop">RUC: {{cultivo.ruc}}</h2>
   </div>
 
 
@@ -13,12 +13,14 @@
     </div>
     <div class="weathernow">
       <div class="tarjeta">
-        <h1>Clima Ahora</h1>
+        <p><img src="{{iconurl}}" alt="weather icon"></p>
+        <h1>{{city}}</h1>
         <div class="tarjetab">
-          <p class="infoweather">Temperatura {{temperature}}°</p>
+          <p class="infoweather">Estado: {{summ}}</p>
+          <p class="infoweather">Temperatura: {{temperature}}°</p>
           <p class="infoweather">Sensacion termica: {{sensation}}</p>
           <p class="infoweather">Humedad: {{humidity1}}%</p>
-          <p class="infoweather">Presion: {{pressure1}}</p>
+          <p class="infoweather">Presion: {{pressure1}} hPa</p>
 
         </div>
       </div>

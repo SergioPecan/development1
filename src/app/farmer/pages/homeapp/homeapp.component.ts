@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {WeatherService} from "../../services/weather.service";
-import {error} from "@angular/compiler-cli/src/transformers/util";
+import{CropService} from "../../services/crop.service";
+import {CropEntity} from "../../entity/crop.entity";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-homeapp',
@@ -14,12 +15,22 @@ export class HomeappComponent{
   sensation:number=0;
   humidity1:number=0;
   pressure1:number=0;
+  summ:string='';
+  iconurl:string='';
+  city:string='Lima';
+  units:string='metric';
 
-  constructor(private weatherservice: WeatherService) {
+  cultivos:CropEntity[]=[];
 
+  constructor(private weatherservice: WeatherService, private http:HttpClient) {
+    this.http.get<CropEntity[]>('http://localhost:3000/cultivosf').subscribe(data => {
+      this.cultivos = data; //
+    });
   }
+
+
   ngOnInit():void{
-    this.weatherservice.getweather().subscribe({
+    this.weatherservice.getweather(this.city,this.units).subscribe({
       next:(res)=>{
         console.log(res);
         this.myweather=res;
@@ -28,6 +39,10 @@ export class HomeappComponent{
         this.sensation=this.myweather.main.feels_like;
         this.humidity1=this.myweather.main.humidity;
         this.pressure1=this.myweather.main.pressure;
+        this.summ=this.myweather.weather[0].main;
+
+
+        this.iconurl='https://openweathermap.org/img/wn/'+this.myweather.weather[0].icon+'@2x.png';
 
       },
       error:(error)=> console.log(error.messsage),
@@ -36,13 +51,6 @@ export class HomeappComponent{
 
   }
 
-
-
-
-
-
-
-
   options2=
     [ {path:'/app/farmer/pages/crop',title:'Crops'},
       {path:'/app/farmer/pages/employee',title: 'Employees'},
@@ -50,5 +58,9 @@ export class HomeappComponent{
     ]
 
 }
+
+
+
+
 
 
