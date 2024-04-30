@@ -1,0 +1,47 @@
+.admin-list {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.admin-list h2 {
+  text-align: center;
+}
+
+.admin-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-list li {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.admin-list .form-group {
+  margin-bottom: 15px;
+}
+
+.admin-list label {
+  display: block;
+}
+
+.admin-list input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.admin-list button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-list button:hover {
+  background-color: #0056b3;
+}

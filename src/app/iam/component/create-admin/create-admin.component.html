@@ -1,0 +1,23 @@
+<div class="admin-list">
+  <h2>Lista de Administradores</h2>
+  <ul>
+    <li *ngFor="let admin of admins">
+      <p>Nombre de usuario: {{admin.username}}</p>
+      <button (click)="deleteAdmin(admin.id)">Eliminar</button>
+      <button (click)="updateAdmin(admin.id, newUsername.value, newPassword.value)">Actualizar</button>
+    </li>
+  </ul>
+
+  <h2>Crear Administrador</h2>
+  <form #adminForm="ngForm" (ngSubmit)="createAdmin(newUsername.value, newPassword.value)">
+    <div class="form-group">
+      <label for="newUsername">Nombre de usuario</label>
+      <input type="text" id="newUsername" #newUsername ngModel name="newUsername" required>
+    </div>
+    <div class="form-group">
+      <label for="newPassword">Contraseña</label>
+      <input type="password" id="newPassword" #newPassword ngModel name="newPassword" required>
+    </div>
+    <button type="submit">Crear</button>
+  </form>
+</div>

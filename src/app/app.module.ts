@@ -18,9 +18,17 @@ import { HeaderComponent } from './public/pages/header/header.component';
 import { HomepageComponent } from './public/pages/homepage/homepage.component'; // Importa el servicio
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {RouterModule} from "@angular/router";
+import { BoardAdminComponent } from './iam/component/board-admin/board-admin.component';
+import { AdminProfileComponent } from './iam/component/profile/profile.component';
+import { CreateAdminComponent } from './iam/component/create-admin/create-admin.component';
+import { UserComponent } from './iam/component/user/user.component';
+import { LoginAdminComponent } from './iam/component/login-admin/login-admin.component';
+import { CreateUserComponent } from './iam/component/create-user/create-user.component';
 
 @NgModule({
   declarations: [
+
     AppComponent,
     HomeComponent,
     ServicesComponent,
@@ -33,8 +41,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     HomepageComponent,
 
+    BoardAdminComponent,
+    AdminProfileComponent,
+      CreateAdminComponent,
+      UserComponent,
+      LoginAdminComponent,
+      CreateUserComponent,
+
+
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -42,7 +59,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     NgOptimizedImage,
     MatSnackBarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule,
+
+
+
   ],
   providers: [SmoothScrollService], // Añade el servicio a los proveedores
   bootstrap: [AppComponent]

@@ -1,0 +1,54 @@
+.nav-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.nav-buttons li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.nav-buttons li a {
+  display: inline-block;
+  padding: 5px 20px; /* Modificado el valor del padding vertical */
+  line-height: 2; /* Reducir la altura del texto dentro del botón */
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-buttons li a:hover {
+  background-color: #555;
+}
+
+
+nav {
+  background: #00576F; /* Color de fondo de la barra de navegación */
+  height: 80px; /* Altura de la barra de navegación */
+  width: 100%; /* Ancho de la barra de navegación */
+}
+
+/* Estilos para la lista de elementos de navegación */
+nav ul {
+  float: right; /* Alinea la lista de elementos a la derecha */
+  margin-right: 20px; /* Margen derecho de la lista de elementos */
+}
+
+/* Estilos para cada elemento de la lista de navegación */
+nav ul li {
+  display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+  line-height: 80px; /* Alinea verticalmente el texto en el centro de la barra de navegación */
+  margin: 0 5px; /* Margen entre los elementos de la lista */
+}
+
+/* Estilos para los enlaces en la lista de navegación */
+nav ul li a {
+  color: #fff; /* Color del texto de los enlaces */
+  font-size: 18px; /* Tamaño de la fuente de los enlaces */
+  padding: 7px 13px; /* Relleno de los enlaces */
+  border-radius: 3px; /* Borde redondeado de los enlaces */
+  text-transform: capitalize; /* Transforma el texto a mayúsculas */
+}
