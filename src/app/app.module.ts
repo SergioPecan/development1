@@ -19,6 +19,7 @@ import { HomepageComponent } from './public/pages/homepage/homepage.component'; 
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EmployeesListComponent } from './resources/pages/employees-list/employees-list.component';
+import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -44,7 +45,11 @@ import { EmployeesListComponent } from './resources/pages/employees-list/employe
     ReactiveFormsModule,
     NgOptimizedImage,
     MatSnackBarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCard,
+    MatCardTitle,
+    MatCardContent,
+    MatCardHeader
   ],
   providers: [SmoothScrollService], // Añade el servicio a los proveedores
   bootstrap: [AppComponent]
