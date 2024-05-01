@@ -22,6 +22,7 @@ import { EmployeesListComponent } from './teams/pages/employees-list/employees-l
 import {MatCard, MatCardContent, MatCardHeader, MatCardImage, MatCardTitle} from "@angular/material/card";
 import {MatButton} from "@angular/material/button";
 import { AddEmployeeComponent } from './teams/pages/add-employee/add-employee.component';
+import { EmployeesAndTeamsComponent } from './teams/pages/employees-and-teams/employees-and-teams.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AddEmployeeComponent } from './teams/pages/add-employee/add-employee.co
     HomepageComponent,
     EmployeesListComponent,
     AddEmployeeComponent,
+    EmployeesAndTeamsComponent,
 
   ],
   imports: [
