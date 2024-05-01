@@ -1,9 +1,9 @@
 
 
 <div class="homeappini" >
-  <div class="headshomeapp"*ngFor="let cultivo of cultivos">
+  <div class="headshomeapp">
     <h1 class="titulohomeapp">La Finca</h1>
-   <h2 class="usuariocrop">RUC: {{cultivo.ruc}}</h2>
+   <h2 class="usuariocrop" *ngFor="let cultivo of cultivos">RUC: {{cultivo.ruc}}</h2>
   </div>
 
 

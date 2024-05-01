@@ -1,6 +1,10 @@
-<div class="crop-wrapper" *ngFor="let crop of crops">
+
+
+<div class="crop-wrapper">
+  <button class="botcrop">Agregar Cultivo</button>
+<div *ngFor="let crop of crops">
   <div class="do">
-    <button class="botcrop">Agregar Cultivo</button>
+
     <h2 >Ruc: {{crop.ruc}}</h2>
   </div>
 
@@ -34,6 +38,7 @@
 
 </div>
 
+</div>
 
 <div class="calendar-container">
 </div>

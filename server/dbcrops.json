@@ -21,6 +21,17 @@
       "cost": 123,
       "profit": 123,
       "ruc": 0
+    },
+    {
+      "id": 2,
+      "code": "Aoasd",
+      "area": 1231,
+      "product": "asd",
+      "localization": "asdff",
+      "status": "fsaf",
+      "cost": 123,
+      "profit": 123,
+      "ruc": 0
     }
   ]
 }

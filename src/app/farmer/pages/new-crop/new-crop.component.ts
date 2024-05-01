@@ -11,54 +11,58 @@ import { Router } from "@angular/router";
 })
 export class NewCropComponent {
 
-  constructor(private cropservice:CropService, private snack:MatSnackBar, private router:Router) {}
-  id=0;
-  code='';
-  area=0;
-  product='';
-  localization='';
-  status='';
-  cost=0;
-  profit=0;
-  ruc=0;
+  constructor(private cropservice: CropService, private snack: MatSnackBar, private router: Router) {
+  }
 
-  register(){
+  id = 0;
+  code = '';
+  area = 0;
+  product = '';
+  localization = '';
+  status = '';
+  cost = 0;
+  profit = 0;
+  ruc = 0;
+
+  register() {
 
 
-    const crop:Crop={
-      id:0,
-      code:this.code,
-      area:this.area,
-      product:this.product,
-      localization:this.localization,
-      status:this.status,
-      cost:this.cost,
-      profit:this.profit,
-      ruc:this.ruc
+    const crop: Crop = {
+      id: 0,
+      code: this.code,
+      area: this.area,
+      product: this.product,
+      localization: this.localization,
+      status: this.status,
+      cost: this.cost,
+      profit: this.profit,
+      ruc: this.ruc
     };
 
 
-      //agregar subscribe
-      this.cropservice.createcrop(crop).subscribe( response=>{
+    //agregar subscribe
+    this.cropservice.createcrop(crop).subscribe(response => {
 
-        this.snack.open('Crop created correctly','Dismiss',{
-          duration:2000,
-          panelClass:['login-snackbar-success']
+        this.snack.open('Crop created correctly', 'Dismiss', {
+          duration: 2000,
+          panelClass: ['login-snackbar-success']
         });
 
         this.router.navigate(['/homeapp']);
-        console.log('Crop created correctly',response);
+        console.log('Crop created correctly', response);
 
       },
 
-        error => {
+      error => {
 
-        console.log('There was a mistake when creating this crop, try again later',error);
+        console.log('There was a mistake when creating this crop, try again later', error);
 
-        }
-      );
+      }
+    );
 
   }
+
+
 
 
 }
