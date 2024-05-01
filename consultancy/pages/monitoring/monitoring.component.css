@@ -1,0 +1,64 @@
+body {
+  background-color: #FFFFFF; /* Color de fondo blanco */
+  font-family: Arial, sans-serif; /* Fuente */
+  margin: 0;
+}
+
+.contracts-header {
+  background-color: #FFFFFF; /* Color de fondo blanco */
+  color: #008000; /* Color de texto verde */
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+}
+
+.contracts-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.companies {
+  text-align: right;
+}
+
+.companies h2 {
+  color: #008000; /* Color de texto verde */
+}
+
+.card {
+  background-color: #f0f0f0; /* Color de fondo gris claro */
+  border: 1px solid #ddd; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 10px; /* Espacio entre cartas */
+}
+
+.green-button {
+  background-color: #FFFFFF; /* Color de fondo blanco */
+  color: #5cb85c; /* Color de texto verde más claro */
+  font-weight: bold; /* Texto más grueso */
+  border: 2px solid #000000; /* Borde negro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  margin-top: 20px; /* Espacio sobre el botón */
+  cursor: pointer;
+}
+
+/* Estilo para el texto verde */
+.green-text {
+  color: green;
+}
+
+/* Estilo para el texto azul */
+.blue-text {
+  color: blue;
+}
+
+.card p {
+  font-weight: bold; /* Hacer que el texto dentro de las cartas sea más grueso */
+}
+

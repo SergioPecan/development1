@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #FFFFFF; /* White background color */
+  width: 800px; /* Adjust this according to your needs */
+  padding: 20px;
+  border-radius: 10px; /* Rounded borders */
+  margin: 50px auto;
+}
+
+.title {
+  color: #008000; /* Green text color */
+  text-align: center;
+}
+
+.info p {
+  font-size: 18px;
+  color: #008000; /* Green text color */
+}
+
+.blue {
+  color: #007bff; /* Blue text color */
+}
+
+.questions-comments {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions, .comments {
+  flex: 1;
+  padding: 20px;
+}
+
+.questions h2, .comments h2 {
+  color: #008000; /* Green text color */
+}
+
+.scrollable {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #808080; /* Gray border */
+  border-radius: 5px; /* Rounded input borders */
+  padding: 10px;
+}
+
+.input-field {
+  width: calc(100% - 42px); /* Adjust this according to your needs */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #808080; /* Gray border */
+  border-radius: 5px; /* Rounded input borders */
+}
+
+.login-button {
+  width: calc(100% - 42px); /* Adjust this according to your needs */
+  padding: 10px;
+  background-color: #008000; /* Green background color */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px; /* Rounded button borders */
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #2e51cd; /* Darker green on hover */
+}
