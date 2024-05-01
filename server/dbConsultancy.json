@@ -1,0 +1,19 @@
+{
+  "crop": [
+    {
+      "temperature": "20°",
+      "airHumidity": "85%",
+      "soilPh": "5.5",
+      "wind": "5 m/s"
+    }
+  ],
+
+  "notification": [
+    {
+      "transmitter" : "",
+      "receiver":"",
+      "message": ""
+    }
+  ]
+
+}
