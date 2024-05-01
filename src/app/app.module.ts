@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EmployeesListComponent } from './teams/pages/employees-list/employees-list.component';
 import {MatCard, MatCardContent, MatCardHeader, MatCardImage, MatCardTitle} from "@angular/material/card";
 import {MatButton} from "@angular/material/button";
+import { AddEmployeeComponent } from './teams/pages/add-employee/add-employee.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import {MatButton} from "@angular/material/button";
     HeaderComponent,
     HomepageComponent,
     EmployeesListComponent,
+    AddEmployeeComponent,
 
   ],
   imports: [
