@@ -1,11 +1,13 @@
-<button>Add employee</button>
+<div class="employee-wrapper" *ngFor="let employee of employees">
+  <button class="add-employee">Add employee</button>
 
-<mat-card class="employees-list">
-  <mat-card-header>
-    <mat-card-title>ID</mat-card-title>
-    <mat-card-title>Charge</mat-card-title>
-  </mat-card-header>
-  <img mat-card-image src="./assets/Images/UserIcon.png" alt="User Icon">
-  <button mat-button>View Teams</button>
-  <button mat-button>Information</button>
-</mat-card>
+  <div class="employee-list-container">
+    <div class="col1" *ngFor="let employee of employees">
+      <p>ID: {{ employee.dni }}</p>
+      <p>Charge: {{ employee.charge }}</p>
+      <button class="view-teams">View Teams</button>
+      <button class="information">Information</button>
+    </div>
+
+  </div>
+</div>
