@@ -18,7 +18,7 @@ import { HeaderComponent } from './public/pages/header/header.component';
 import { HomepageComponent } from './public/pages/homepage/homepage.component'; // Importa el servicio
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { EmployeesListComponent } from './resources/pages/employees-list/employees-list.component';
+import { EmployeesListComponent } from './teams/pages/employees-list/employees-list.component';
 import {MatCard, MatCardContent, MatCardHeader, MatCardImage, MatCardTitle} from "@angular/material/card";
 import {MatButton} from "@angular/material/button";
 
