@@ -10,28 +10,28 @@
           <button> Add payment </button>
        </div>
      <div class="cards-container">
-       <div class="card-features-container">
+       <div class="card-features-container" *ngFor="let payment of payments">
          <div class="feature-content">
            <h3> Type </h3>
-           <h3> Salary </h3>
+           <h3> {{ payment.type }} </h3>
          </div>
          <div class="feature-content-2">
            <h3 > Cost </h3>
-           <h3> $300 </h3>
+           <h3> {{ payment.cost }} </h3>
          </div>
          <div class="btn-section">
            <button> Description </button>
            <button> Paid </button>
          </div>
        </div>
-       <div class="card-features-container">
+       <div class="card-features-container" *ngFor="let payment of payments">
          <div class="feature-content">
            <h3> Type </h3>
-           <h3> Fertilixier purchase </h3>
+           <h3> {{ payment.type }} </h3>
          </div>
          <div class="feature-content-2">
            <h3 > Cost </h3>
-           <h3> $900 </h3>
+           <h3> {{ payment.cost }} </h3>
          </div>
          <div class="btn-section">
            <button> Description </button>
@@ -46,15 +46,15 @@
           <h1> Pending Collections</h1>
           <button> Add collection </button>
         </div>
-        <div class="cards-container">
+        <div class="cards-container" *ngFor="let collection of collections">
           <div class="card-features-container">
             <div class="feature-content">
               <h3> Type </h3>
-              <h3> Selling Apples </h3>
+              <h3> {{ collection.type }} </h3>
             </div>
             <div class="feature-content-2">
               <h3 > Cost </h3>
-              <h3> $300 </h3>
+              <h3> {{ collection.cost }} </h3>
             </div>
             <div class="btn-section">
               <button> Description </button>
