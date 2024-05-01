@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoring</title>
+  <link rel="stylesheet" href="monitoring-compani.component.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="title">Monitoring</h1>
+
+  <div class="info">
+    <p>
+      <strong>Code:</strong> <span class="blue">AC856</span><br>
+      <strong>Area:</strong> <span class="blue">100 m2</span><br>
+      <strong>Product:</strong> <span class="blue">Rice</span><br>
+      <strong>State:</strong> <span class="blue">Germination</span><br>
+      <strong>Temperature:</strong> <span class="blue">20°C</span><br>
+      <strong>Air humidity:</strong> <span class="blue">85%</span><br>
+      <strong>Soil Ph:</strong> <span class="blue">5.5</span><br>
+      <strong>Wind:</strong> <span class="blue">5 m/s</span>
+    </p>
+  </div>
+
+    <div class="comments">
+      <h2>Notifications</h2>
+      <div class="scrollable" id="comments">
+        <!-- Comments will be inserted here -->
+      </div>
+      <input type="text" [(noModel)|="transmitter" id="commentInput" placeholder="Leave a comment..." class="input-field" >
+      <button class="register-crop" (click)= "register()" >Add Crop</button>
+    </div>
+  </div>
+</body>
+</html>

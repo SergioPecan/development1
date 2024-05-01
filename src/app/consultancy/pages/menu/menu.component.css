@@ -1,0 +1,66 @@
+body {
+  background-color: #FFFFFF; /* Color de fondo blanco */
+  font-family: Arial, sans-serif; /* Fuente */
+  margin: 0;
+}
+
+.consultant-header {
+  background-color: #FFFFFF; /* Color de fondo blanco */
+  color: #008000; /* Color de texto verde */
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+}
+
+.consultant-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.green-button {
+  background-color: #FFFFFF; /* Color de fondo blanco */
+  color: #5cb85c; /* Color de texto verde más claro */
+  font-weight: bold; /* Texto más grueso */
+  border: 2px solid #000000; /* Borde negro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.notifications {
+  flex-grow: 1;
+  padding-left: 20px;
+  margin-left: 20px; /* Separación añadida */
+}
+
+.notifications h2 {
+  color: #FF0000; /* Color de texto rojo */
+}
+
+.notifications p {
+  color: #000000; /* Color de texto negro */
+}
+
+/* Estilo para el cuadro de mensaje */
+.message-box {
+  background-color: #f0f0f0; /* Color de fondo gris claro */
+  border: 1px solid #ddd; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 10px; /* Espacio entre cuadros de mensaje */
+}
+
+.message-box p {
+  margin: 5px 0; /* Espaciado interno */
+}
