@@ -1,7 +1,7 @@
-import { CropEntity } from './crop.entity';
+import { Crop } from './crop.entity';
 
 describe('CropEntity', () => {
   it('should create an instance', () => {
-    expect(new CropEntity()).toBeTruthy();
+    expect(new Crop()).toBeTruthy();
   });
 });
