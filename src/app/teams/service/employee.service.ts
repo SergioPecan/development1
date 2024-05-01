@@ -13,7 +13,7 @@ export class EmployeeService {
   getEmployeeData(){
     return this.http.get<Employee[]>(this.apiUrl)
   }
-  
+
   createEmployee(employee: Employee){
     return this.http.post<Employee>(this.apiUrl, employee);
   }

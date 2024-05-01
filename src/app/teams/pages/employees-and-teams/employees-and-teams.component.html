@@ -1,7 +1,7 @@
 <div class="employees-and-teams-container">
-  <div class="col1">
-    <p>Budget: </p>
-    <p>Crop code:</p>
+  <div class="col1" *ngFor="let crop of crops">
+    <p>Budget: {{ crop.profit }}</p>
+    <p>Crop code: {{ crop.code }}</p>
   </div>
 
   <div class="employee-list-container">
