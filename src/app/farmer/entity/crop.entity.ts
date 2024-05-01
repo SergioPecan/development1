@@ -1,4 +1,5 @@
-export class CropEntity {
+export class Crop {
+  id:number;
   code:string;
   area:number;
   product:string;
@@ -9,6 +10,7 @@ export class CropEntity {
   ruc:number;
 
   constructor(){
+    this.id=0;
     this.code="";
     this.area=0;
     this.product="";

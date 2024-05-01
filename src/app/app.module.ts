@@ -25,6 +25,8 @@ import {MatAnchor} from "@angular/material/button";
 import { CalendarComponent } from './farmer/pages/calendar/calendar.component';
 import {MatCard} from "@angular/material/card";
 import { NewCropComponent } from './farmer/pages/new-crop/new-crop.component';
+import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 // Importa el servicio
@@ -50,6 +52,7 @@ import { NewCropComponent } from './farmer/pages/new-crop/new-crop.component';
     NewCropComponent,
 
 
+
   ],
   imports: [
     BrowserModule,
@@ -61,8 +64,9 @@ import { NewCropComponent } from './farmer/pages/new-crop/new-crop.component';
     MatToolbar,
     MatAnchor,
     MatCard,
+    MatSnackBarModule
   ],
-  providers: [SmoothScrollService], // Añade el servicio a los proveedores
+  providers: [SmoothScrollService, provideAnimationsAsync('noop'), provideAnimationsAsync()], // Añade el servicio a los proveedores
   bootstrap: [AppComponent]
 })
 export class AppModule { }

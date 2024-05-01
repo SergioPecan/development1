@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {WeatherService} from "../../services/weather.service";
 import{CropService} from "../../services/crop.service";
-import {CropEntity} from "../../entity/crop.entity";
+import {Crop} from "../../entity/crop.entity";
 import {HttpClient} from "@angular/common/http";
 
 @Component({
@@ -17,13 +17,13 @@ export class HomeappComponent{
   pressure1:number=0;
   summary:string='';
   iconurl:string='';
-  city:string='Lima';
+  city:string='Santiago de chile';
   units:string='metric';
 
-  cultivos:CropEntity[]=[];
+  cultivos:Crop[]=[];
 
   constructor(private weatherservice: WeatherService, private http:HttpClient) {
-    this.http.get<CropEntity[]>('http://localhost:3000/cultivosf').subscribe(data => {
+    this.http.get<Crop[]>('http://localhost:3000/cropst').subscribe(data => {
       this.cultivos = data; //
     });
   }

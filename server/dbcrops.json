@@ -1,0 +1,26 @@
+{
+  "cropst": [
+    {
+      "id": 0,
+      "code": "AC856",
+      "area": 100,
+      "product": "Arroz",
+      "localization": "-11.911609261299382, -76.6633881401565",
+      "status": "Germinacion",
+      "cost": 500,
+      "profit": 1000,
+      "ruc": 26548796432
+    },
+    {
+      "id": 1,
+      "code": "QW3",
+      "area": 123,
+      "product": "AASD",
+      "localization": "ASD",
+      "status": "ASD",
+      "cost": 123,
+      "profit": 123,
+      "ruc": 0
+    }
+  ]
+}

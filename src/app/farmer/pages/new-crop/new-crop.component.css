@@ -1,5 +1,17 @@
-.form-ncrop{
-
+.registercrop-container{
+  display: flex;
+  flex-direction: column;
   width: 1024px;
   margin: 50px auto;
+}
+
+.title{
+  font-family: "Times New Roman", Times, serif;
+}
+
+.register-crop{
+  margin-top: 40px;
+  padding: 10px 10px;
+  background-color: rgb(0 255 0/50%);
+  border-radius: 20px;
 }

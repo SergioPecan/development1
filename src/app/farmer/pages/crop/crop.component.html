@@ -1,4 +1,4 @@
-<div class="crop-wrapper"*ngFor="let crop of crops">
+<div class="crop-wrapper" *ngFor="let crop of crops">
   <div class="do">
     <button class="botcrop">Agregar Cultivo</button>
     <h2 >Ruc: {{crop.ruc}}</h2>
@@ -6,7 +6,7 @@
 
 
   <div class="doblecolumna">
-    <div class="columna1" *ngFor="let crop of crops">
+    <div class="columna1" >
       <p>Code: {{ crop.code }}</p>
       <p>Area: {{ crop.area }} m2</p>
       <p>Product: {{ crop.product }}</p>
@@ -15,7 +15,7 @@
 
 
 
-    <div class="columna2" *ngFor="let crop of crops">
+    <div class="columna2">
 
       <p>Status: {{crop.status}}</p>
       <p>Cost: ${{crop.cost}}</p>
@@ -24,9 +24,9 @@
   </div>
 
   <div>
-    <button class="botcrop">Calendario</button>
+    <button class="botcrop">Calendar</button>
 
-    <button class="botcrop">Peguntar al asesor</button>
+    <button class="botcrop">Ask Consultor</button>
   </div>
 
 

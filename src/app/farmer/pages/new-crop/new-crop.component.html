@@ -1,27 +1,25 @@
-<form class="form-ncrop">
-  <label>ID:</label>
-  <input type="number" formControlName="id">
+<div class="registercrop-container">
+  <h1 class="title">New Crop</h1>
+  <label class="labels">Code:</label>
+  <input class="input-field" [(ngModel)]='code' type="text" placeholder="Insert your crop code">
 
-  <label >Codigo:</label>
-  <input type="text" formControlName="codigo">
+  <label class="labels">Area:</label>
+  <input class="input-field" [(ngModel)]="area" type="number" placeholder="Insert the area of your crop">
 
-  <label >Area:</label>
-  <input type="number" formControlName="area">
+  <label class="labels">Product:</label>
+  <input class="input-field" [(ngModel)]="product" type="text" placeholder="Insert your product">
 
-  <label>Producto:</label>
-  <input type="text" formControlName="producto">
+  <label class="labels">Localization:</label>
+  <input class="input-field" [(ngModel)]="localization" type='text' placeholder="Insert your coordenates of your crop">
 
-  <label>Localizacion:</label>
-  <input type="text" formControlName="localizacion">
+  <label class="labels">Status:</label>
+  <input class="input-field" [(ngModel)]="status" type="text" placeholder="Insert the status of your crop">
 
-  <label>Estado:</label>
-  <input type="text" formControlName="estado">
+  <label class="labels">Cost:</label>
+  <input class="input-field" [(ngModel)]="cost" type="number" placeholder="Insert the cost of the crop">
 
-  <label >Costo:</label>
-  <input type="number" formControlName="costo">
+  <label class="labels">Profit:</label>
+  <input class="input-field" [(ngModel)]="profit" type="number" placeholder="Insert your estimated profit">
+  <button class="register-crop" (click)="register()">Add Crop</button>
 
-  <label >Retorno:</label>
-  <input type="number" formControlName="retorno">
-
-  <button type="submit" >Enviar</button>
-</form>
+</div>

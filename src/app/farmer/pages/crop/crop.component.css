@@ -1,3 +1,7 @@
+.crop-wrapper{
+  width: 1024px;
+  margin: 50px auto;
+}
 .doblecolumna{
   display: flex;
   flex-direction: row;
@@ -16,10 +20,7 @@
 
 }
 
-.crop-wrapper{
-  width: 1024px;
-  margin: 50px auto;
-}
+
 
 .doblecolumna{
   background-color: rgb(135 206 235 / 50%) ;
