@@ -23,6 +23,7 @@ import {MatCard, MatCardContent, MatCardHeader, MatCardImage, MatCardTitle} from
 import {MatButton} from "@angular/material/button";
 import { AddEmployeeComponent } from './teams/pages/add-employee/add-employee.component';
 import { EmployeesAndTeamsComponent } from './teams/pages/employees-and-teams/employees-and-teams.component';
+import { EmployeeInformationComponent } from './teams/pages/employee-information/employee-information.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { EmployeesAndTeamsComponent } from './teams/pages/employees-and-teams/em
     EmployeesListComponent,
     AddEmployeeComponent,
     EmployeesAndTeamsComponent,
+    EmployeeInformationComponent,
 
   ],
   imports: [
