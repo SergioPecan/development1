@@ -11,9 +11,9 @@ export class EmployeeService {
   constructor(private http: HttpClient) {}
 
   getEmployeeData(){
-    return this.http.get<any[]>(this.apiUrl)
+    return this.http.get<Employee[]>(this.apiUrl)
   }
-
+  
   createEmployee(employee: Employee){
     return this.http.post<Employee>(this.apiUrl, employee);
   }
