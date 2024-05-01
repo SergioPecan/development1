@@ -26,5 +26,24 @@
       "retorno":"$1000"
 
     }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "type": "Salary",
+      "cost": 2100
+    },
+    {
+      "id": 2,
+      "type": "Fertilizer",
+      "cost": 900
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "type": "Selling apples",
+      "cost": 300
+    }
   ]
 }
