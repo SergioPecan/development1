@@ -1,9 +1,10 @@
 
 
 <div class="crop-wrapper">
-  <button class="botcrop">Agregar Cultivo</button>
+  <button class="botcrop"  routerLink="/homepage/crop/new-crop">Agregar Cultivo</button>
+
 <div *ngFor="let crop of crops">
-  <div class="do">
+  <div class="headruc">
 
     <h2 >Ruc: {{crop.ruc}}</h2>
   </div>
@@ -28,7 +29,7 @@
   </div>
 
   <div>
-    <button class="botcrop">Calendar</button>
+    <button class="botcrop" routerLink="/homepage/crop/calendar">Calendar</button>
 
     <button class="botcrop">Ask Consultor</button>
   </div>

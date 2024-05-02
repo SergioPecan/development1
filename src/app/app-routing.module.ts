@@ -13,12 +13,11 @@ const routes: Routes = [
   { path: 'home', component: HomepageComponent },
   { path: 'login', component: LoginComponent },
   {path: 'signup', component: SingupComponent},
-  //{ path: '**', redirectTo: 'home'},
-  { path:'homeapp', component:HomeappComponent},
-  { path:'crop', component:CropComponent},
-  {path:'new-crop',component:NewCropComponent},
-  {path:'calendar',component:CalendarComponent}
 
+  { path:'homepage', component:HomeappComponent},
+  { path:'homepage/crop', component:CropComponent},
+  {path:'homepage/crop/new-crop',component:NewCropComponent},
+  {path:'homepage/crop/calendar',component: CalendarComponent}
 
 
 ];

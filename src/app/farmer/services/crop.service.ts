@@ -25,8 +25,8 @@ export class CropService {
 
   // D
 
-  deletecrop(id:number):Observable<void>{
-    return this.http.delete<void>(`${this.urlcrops}${id}`);
+  deletecrop(code:string):Observable<void>{
+    return this.http.delete<void>(`${this.urlcrops}${code}`);
   }
 
 }

@@ -22,7 +22,7 @@ export class NewCropComponent {
   status = '';
   cost = 0;
   profit = 0;
-  ruc = 0;
+  ruc = 26548796432;
 
   register() {
 
@@ -48,7 +48,7 @@ export class NewCropComponent {
           panelClass: ['login-snackbar-success']
         });
 
-        this.router.navigate(['/homeapp']);
+        this.router.navigate(['/crop']);
         console.log('Crop created correctly', response);
 
       },

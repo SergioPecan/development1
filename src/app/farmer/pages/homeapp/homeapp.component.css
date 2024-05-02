@@ -9,7 +9,7 @@
 .botoneshomeapp{
 
   width: 100%;
-  padding: 10px;
+  padding:50px 30px;
   background-color: #008000; /* Color de fondo verde */
   color: white; /* Color de texto blanco */
   border: none;
@@ -29,11 +29,13 @@
 .headshomeapp{
    display: flex;
    flex-direction: column;
-  margin-bottom: 5%;
+    margin-bottom: 5%;
+   align-items: center;
  }
 .titulohomeapp{
   flex: 1 1 auto;
  color: #008000;
+
 }
 .weathernow{
   display: grid;

@@ -13,25 +13,25 @@
     },
     {
       "id": 1,
-      "code": "QW3",
-      "area": 123,
-      "product": "AASD",
-      "localization": "ASD",
-      "status": "ASD",
-      "cost": 123,
-      "profit": 123,
-      "ruc": 0
+      "code": "2143",
+      "area": 23423,
+      "product": "234",
+      "localization": "234",
+      "status": "234",
+      "cost": 234,
+      "profit": 234,
+      "ruc": 26548796432
     },
     {
       "id": 2,
-      "code": "Aoasd",
-      "area": 1231,
-      "product": "asd",
-      "localization": "asdff",
-      "status": "fsaf",
+      "code": "123",
+      "area": 2123,
+      "product": "123",
+      "localization": "213",
+      "status": "123",
       "cost": 123,
       "profit": 123,
-      "ruc": 0
+      "ruc": 26548796432
     }
   ]
 }

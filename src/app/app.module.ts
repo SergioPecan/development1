@@ -28,7 +28,6 @@ import { NewCropComponent } from './farmer/pages/new-crop/new-crop.component';
 import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
-
 // Importa el servicio
 
 @NgModule({
