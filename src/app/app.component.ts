@@ -9,7 +9,7 @@ import { SmoothScrollService } from './public/services/smooth-scroll.service';
 export class AppComponent {
 
   constructor() {
-    const fechaHoy: Date = new Date();
+
   }
   title = 'AgroGes';
   options =

@@ -14,10 +14,10 @@ export class EmployeesAndTeamsComponent {
   crops: Crop[] = [];
 
   constructor(private http: HttpClient, private router: Router) {
-    this.http.get<Employee[]>('http://localhost:3000/employees').subscribe(data => {
+    this.http.get<Employee[]>('http://localhost:3200/employees').subscribe(data => {
       this.employees = data;
     })
-    this.http.get<Crop[]>('http://localhost:3000/crops').subscribe(data => {
+    this.http.get<Crop[]>('http://localhost:3200/crops').subscribe(data => {
       this.crops = data; //
     });
   }

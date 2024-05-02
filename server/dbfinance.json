@@ -30,19 +30,19 @@
   "payments": [
     {
       "id": 1,
-      "type": "Salary",
+      "type": "Service",
       "cost": 2100
     },
     {
       "id": 2,
-      "type": "Fertilizer",
+      "type": "Product-Fertilizer",
       "cost": 900
     }
   ],
   "collections": [
     {
       "id": 1,
-      "type": "Selling apples",
+      "type": "Product-Soil",
       "cost": 300
     }
   ]

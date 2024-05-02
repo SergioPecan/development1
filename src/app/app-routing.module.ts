@@ -28,7 +28,7 @@ const routes: Routes = [
   {path:'homepage/finance',component:FinanceComponent},
 
   {path:'homepage/employee',component:EmployeesListComponent},
-  {path:'homepage/employee/new-employee',component:AddEmployeeComponent},
+  {path:'ick',component:AddEmployeeComponent},
   {path:'homepage/employee/employee-and-teams',component:EmployeesAndTeamsComponent}
 
 ];

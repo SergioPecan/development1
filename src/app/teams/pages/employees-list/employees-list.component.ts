@@ -12,7 +12,7 @@ export class EmployeesListComponent {
   employees: Employee[] = [];
 
   constructor(private http: HttpClient, private router: Router) {
-    this.http.get<Employee[]>('http://localhost:3000/employees').subscribe(data => {
+    this.http.get<Employee[]>('http://localhost:3200/employees').subscribe(data => {
       this.employees = data;
     })
   }

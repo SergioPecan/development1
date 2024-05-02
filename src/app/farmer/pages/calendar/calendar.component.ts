@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 import {WeatherService} from "../../services/weather.service";
 
 
@@ -19,7 +18,7 @@ export class CalendarComponent {
   city: string = 'Lima';
   units: string = 'metric';
 
-  constructor(private weatherservice: WeatherService, http: HttpClient) {
+  constructor(private weatherservice: WeatherService) {
   }
 
   ngOnInit(): void {
