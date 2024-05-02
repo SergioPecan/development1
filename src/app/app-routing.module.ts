@@ -29,7 +29,7 @@ const routes: Routes = [
 
   {path:'homepage/employee',component:EmployeesListComponent},
   {path:'homepage/employee/new-employee',component:AddEmployeeComponent},
-  {path:'homepage/employee/employee-and-tems',component:EmployeesAndTeamsComponent}
+  {path:'homepage/employee/employee-and-teams',component:EmployeesAndTeamsComponent}
 
 ];
 

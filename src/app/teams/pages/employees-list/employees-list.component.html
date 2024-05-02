@@ -1,0 +1,13 @@
+<div class="employee-wrapper">
+  <span>Employees</span>
+  <button class="add-employee">Add employee</button>
+
+  <div class="employee-list-container">
+    <div class="col1" *ngFor="let employee of employees">
+      <p>ID: {{ employee.dni }}</p>
+      <p>Charge: {{ employee.charge }}</p>
+      <button class="view-teams">View Teams</button>
+      <button class="information">Information</button>
+    </div>
+  </div>
+</div>

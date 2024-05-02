@@ -1,0 +1,53 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "sergiosad123@gmail.com",
+      "password": "sergio",
+      "phone": "964457986",
+      "ruc": "964457986"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Carlos Arian",
+      "lastName": "Guevara Aguirre",
+      "dni": "72188538",
+      "charge": "Worker",
+      "age": 30,
+      "salary": 1900
+    },
+    {
+      "id": 2,
+      "firstName": "Fabio Alejandro",
+      "lastName": "Guiopp Saavedra",
+      "dni": "72188541",
+      "charge": "Worker",
+      "age": 31,
+      "salary": 2100
+    },
+    {
+      "id": 3,
+      "firstName": "Marcos Alejo",
+      "lastName": "Pozo Palma",
+      "dni": "20738481",
+      "charge": "Worker",
+      "age": 32,
+      "salary": 2200
+    }
+  ],
+  "crops": [
+    {
+      "id": 1,
+      "code": "AC856",
+      "area": 100,
+      "product": "Arroz",
+      "localization": "-11.911609261299382, -76.6633881401565",
+      "status": "Germinacion",
+      "cost": 500,
+      "profit": 1000,
+      "ruc": 26548796432
+    }
+  ]
+}

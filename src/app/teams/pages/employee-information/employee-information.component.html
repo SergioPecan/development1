@@ -1,0 +1,15 @@
+<div class="employee-information-container">
+  <span>Employees</span>
+
+  <div class="employee-information-container">
+    <div class="col1" *ngFor="let employee of employees">
+      <p>Name: {{ employee.firstName }}</p>
+      <p>Last Name: {{ employee.lastName }}</p>
+      <p>Age: {{ employee.age }}</p>
+      <p>ID: {{ employee.dni }}</p>
+      <p>Charge: {{ employee.charge }}</p>
+      <p>Salary: {{ employee.salary }}</p>
+      <img src="assets/Images/UserIcon.png" alt="User Icon">
+    </div>
+  </div>
+</div>

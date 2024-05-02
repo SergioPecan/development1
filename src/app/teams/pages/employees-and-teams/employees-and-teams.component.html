@@ -1,0 +1,14 @@
+<div class="employees-and-teams-container">
+  <span>Employees and Teams</span>
+  <div class="col1" *ngFor="let crop of crops">
+    <p>Budget: {{ crop.profit }}</p>
+    <p>Crop code: {{ crop.code }}</p>
+  </div>
+
+  <div class="employee-list-container">
+    <div class="col1" *ngFor="let employee of employees">
+      <p>ID: {{ employee.dni }}</p>
+      <p>Charge: {{ employee.charge }}</p>
+    </div>
+  </div>
+</div>
