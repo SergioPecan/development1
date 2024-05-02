@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { User} from "../../entity/user.entity";
-import { UserService } from "../../service/user.service";
+import { User} from "../../model/user.entity";
+import { AuthService } from "../../service/auth.service";
+import {MatSnackBar} from "@angular/material/snack-bar";
+import{Router} from "@angular/router";
 @Component({
   selector: 'app-singup',
   templateUrl: './singup.component.html',
   styleUrl: './singup.component.css'
 })
 export class SingupComponent {
-  constructor(private userService: UserService) {}
+  constructor(private userService: AuthService,private _snackBar:MatSnackBar, private router: Router) {}
 
 
   email = '';
@@ -21,7 +23,9 @@ export class SingupComponent {
     email: this.email,
     password: this.password,
     phone: this.phone,
-    ruc: this.ruc
+    ruc: this.ruc,
+    IsAdmin: false,
+    token: ''
   };
 
 
@@ -30,6 +34,13 @@ export class SingupComponent {
     this.userService.createUser(user).subscribe(
       response => {
         // Aquí puedes manejar la respuesta del servidor
+        this._snackBar.open('Creación de usuario correctamente', 'Cerrar', {
+          duration: 2000,
+          panelClass: ['login-snackbar-success']
+        });
+
+        this.userService.loggedUser = true;
+        this.router.navigate(['/home']);
         console.log('Usuario creado con éxito', response);
       },
       error => {

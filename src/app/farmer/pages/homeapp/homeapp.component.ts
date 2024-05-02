@@ -23,7 +23,7 @@ export class HomeappComponent {
   first=this.crops.length > 0 ? this.crops[0] : null;
 
   constructor(private weatherservice: WeatherService, private http: HttpClient) {
-    this.http.get<Crop[]>('http://localhost:3000/cropst').subscribe(data => {
+    this.http.get<Crop[]>('http://localhost:3300/cropst').subscribe(data => {
       this.crops = data; //
     });
   }

@@ -1,18 +1,18 @@
-// user.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from '../entity/user.entity';
+import { Observable } from 'rxjs';
+
+const API_URL = 'http://localhost:3000/api/v1/';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'http://localhost:3000/usuarios'; // Ajusta esto a la URL de tu API
+  constructor(private http: HttpClient) { }
 
-  constructor(private http: HttpClient) {}
 
-  createUser(user: User) {
-    return this.http.post<User>(this.apiUrl, user);
+
+  getAdminBoard(): Observable<any> {
+    return this.http.get(API_URL + 'admin', { responseType: 'text' });
   }
 }
-

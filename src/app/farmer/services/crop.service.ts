@@ -7,7 +7,7 @@ import {Crop} from "../model/crop.entity";
   providedIn: 'root'
 })
 export class CropService {
-  private urlcrops ='http://localhost:3000/cropst';
+  private urlcrops ='http://localhost:3300/cropst';
 
 
   constructor(private http: HttpClient) { }

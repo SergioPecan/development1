@@ -10,6 +10,6 @@ export class FarmerService {
   constructor(private http:HttpClient) {
   }
   getdata():Observable<any[]>{
-    return this.http.get<any[]>('https://localhost:3000');
+    return this.http.get<any[]>('https://localhost:300');
   }
 }

@@ -1,18 +1,26 @@
 {
-  "usuarios": [
-    {
-      "id": 1,
-      "nombre": "Juan",
-      "correo": "juan@example.com",
-      "contraseña": "contraseñaSegura123"
-    },
+  "user": [
     {
       "id": 2,
-      "nombre": "Ana",
-      "correo": "ana@example.com",
-      "contraseña": "otraContraseñaSegura456"
+      "email": "sergiosad123@gmail.com",
+      "password": "pecan",
+      "phone": "964457986",
+      "ruc": "12345678912",
+      "IsAdmin": false,
+      "token": ""
     }
-
+  ],
+  "admin": [
+    {
+      "id": 0,
+      "username": "admin",
+      "password": "pecan"
+    },
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin"
+    }
   ],
   "cultivosf":[
     {

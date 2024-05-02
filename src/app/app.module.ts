@@ -30,6 +30,12 @@ import {AddEmployeeComponent} from "./teams/pages/add-employee/add-employee.comp
 import {EmployeeInformationComponent} from "./teams/pages/employee-information/employee-information.component";
 import {EmployeesAndTeamsComponent} from "./teams/pages/employees-and-teams/employees-and-teams.component";
 import {EmployeesListComponent} from "./teams/pages/employees-list/employees-list.component";
+import {BoardAdminComponent} from "./iam/component/board-admin/board-admin.component";
+import {CreateAdminComponent} from "./iam/component/create-admin/create-admin.component";
+import {AdminProfileComponent} from "./iam/component/profile/profile.component";
+import {UserComponent} from "./iam/component/user/user.component";
+import {LoginAdminComponent} from "./iam/component/login-admin/login-admin.component";
+import {CreateUserComponent} from "./iam/component/create-user/create-user.component";
 
 // Importa el servicio
 
@@ -55,6 +61,14 @@ import {EmployeesListComponent} from "./teams/pages/employees-list/employees-lis
     EmployeeInformationComponent,
     EmployeesAndTeamsComponent,
     EmployeesListComponent,
+    UserComponent,
+    BoardAdminComponent,
+    CreateAdminComponent,
+    AdminProfileComponent,
+    LoginAdminComponent,
+    CreateUserComponent
+
+
 
 
 

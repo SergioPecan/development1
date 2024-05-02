@@ -10,7 +10,7 @@ import {Crop} from "../../model/crop.entity";
   styleUrls: ['./crop.component.css']
 })
 export class CropComponent {
-  private urlcrops ='http://localhost:3000/cropst';
+  private urlcrops ='http://localhost:3300/cropst';
   crops: Crop[] = []; // Arreglo para almacenar los datos del crop
 
 
