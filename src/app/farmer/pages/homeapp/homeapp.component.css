@@ -35,7 +35,13 @@
 .titulohomeapp{
   flex: 1 1 auto;
  color: #008000;
+  font-size: 100px;
 
+
+}
+#ruc{
+  margin-top: 50px;
+  color: #2e51cd;
 }
 .weathernow{
   display: grid;

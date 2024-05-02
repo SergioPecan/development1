@@ -19,14 +19,17 @@ import { HomepageComponent } from './public/pages/homepage/homepage.component';
 import { HomeappComponent } from './farmer/pages/homeapp/homeapp.component';
 import { FinanceComponent } from './farmer/pages/finance/finance.component';
 import { CropComponent } from './farmer/pages/crop/crop.component';
-import { EmployeeComponent } from './farmer/pages/employee/employee.component';
 import {MatToolbar} from "@angular/material/toolbar";
 import {MatAnchor} from "@angular/material/button";
 import { CalendarComponent } from './farmer/pages/calendar/calendar.component';
-import {MatCard} from "@angular/material/card";
+import {MatCard,MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
 import { NewCropComponent } from './farmer/pages/new-crop/new-crop.component';
 import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {AddEmployeeComponent} from "./teams/pages/add-employee/add-employee.component";
+import {EmployeeInformationComponent} from "./teams/pages/employee-information/employee-information.component";
+import {EmployeesAndTeamsComponent} from "./teams/pages/employees-and-teams/employees-and-teams.component";
+import {EmployeesListComponent} from "./teams/pages/employees-list/employees-list.component";
 
 // Importa el servicio
 
@@ -46,9 +49,13 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     HomeappComponent,
     FinanceComponent,
     CropComponent,
-    EmployeeComponent,
     CalendarComponent,
     NewCropComponent,
+    AddEmployeeComponent,
+    EmployeeInformationComponent,
+    EmployeesAndTeamsComponent,
+    EmployeesListComponent,
+
 
 
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import {Crop } from "../../entity/crop.entity";
+import {Crop} from "../../model/crop.entity";
 
 // Definición de la interfaz Cultivo
 

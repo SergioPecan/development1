@@ -10,28 +10,6 @@
       "cost": 500,
       "profit": 1000,
       "ruc": 26548796432
-    },
-    {
-      "id": 1,
-      "code": "2143",
-      "area": 23423,
-      "product": "234",
-      "localization": "234",
-      "status": "234",
-      "cost": 234,
-      "profit": 234,
-      "ruc": 26548796432
-    },
-    {
-      "id": 2,
-      "code": "123",
-      "area": 2123,
-      "product": "123",
-      "localization": "213",
-      "status": "123",
-      "cost": 123,
-      "profit": 123,
-      "ruc": 26548796432
     }
   ]
 }

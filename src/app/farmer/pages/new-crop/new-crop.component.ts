@@ -1,5 +1,5 @@
 import {Component } from '@angular/core';
-import { Crop } from "../../entity/crop.entity";
+import { Crop} from "../../model/crop.entity";
 import { CropService } from "../../services/crop.service";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { Router } from "@angular/router";

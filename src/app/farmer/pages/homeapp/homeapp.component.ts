@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {WeatherService} from "../../services/weather.service";
-import {Crop} from "../../entity/crop.entity";
+import {Crop} from "../../model/crop.entity";
 import {HttpClient} from "@angular/common/http";
 
 @Component({

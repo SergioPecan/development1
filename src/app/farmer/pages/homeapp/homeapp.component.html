@@ -5,7 +5,7 @@
     <div *ngFor="let crop of crops; let first = first">
       <div class="do" *ngIf="first">
 
-        <h2>Ruc: {{crop.ruc}}</h2>
+        <h2 id=ruc>Ruc: {{crop.ruc}}</h2>
       </div>
     </div>
   </div>
@@ -14,8 +14,8 @@
   <div class=ordenarhomeapp>
     <div>
       <a mat-button class="botoneshomeapp" routerLink="/homepage/crop">Crops</a>
-      <a mat-button class="botoneshomeapp" routerLink="/homepage/>Employees">Employees</a>
-      <a mat-button class="botoneshomeapp" routerLink="/homepage/">Finance</a>
+      <a mat-button class="botoneshomeapp" routerLink="/homepage/>employees">Employees</a>
+      <a mat-button class="botoneshomeapp" routerLink="/homepage/finance">Finance</a>
 
     </div>
     <div class="weathernow">
