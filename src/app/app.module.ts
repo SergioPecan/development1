@@ -20,9 +20,16 @@ import { HomeappComponent } from './farmer/pages/homeapp/homeapp.component';
 import { FinanceComponent } from './farmer/pages/finance/finance.component';
 import { CropComponent } from './farmer/pages/crop/crop.component';
 import {MatToolbar} from "@angular/material/toolbar";
-import {MatAnchor} from "@angular/material/button";
+import {MatAnchor, MatButton, MatButtonModule} from "@angular/material/button";
 import { CalendarComponent } from './farmer/pages/calendar/calendar.component';
-import {MatCard,MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
+import {
+  MatCard,
+  MatCardContent,
+  MatCardHeader,
+  MatCardImage,
+  MatCardModule,
+  MatCardTitle
+} from "@angular/material/card";
 import { NewCropComponent } from './farmer/pages/new-crop/new-crop.component';
 import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
@@ -36,6 +43,15 @@ import {AdminProfileComponent} from "./iam/component/profile/profile.component";
 import {UserComponent} from "./iam/component/user/user.component";
 import {LoginAdminComponent} from "./iam/component/login-admin/login-admin.component";
 import {CreateUserComponent} from "./iam/component/create-user/create-user.component";
+import { MenuComponent } from './consultant/pages/menu/menu.component';
+import { MonitoringComponent } from './consultant/pages/monitoring/monitoring.component';
+import { MonitoringCompanieComponent } from './consultant/pages/monitoring-companie/monitoring-companie.component';
+import { ContractsComponent } from './consultant/pages/contracts/contracts.component';
+import {MatTable, MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatSortModule} from "@angular/material/sort";
+import {MatFormField, MatInput, MatLabel} from "@angular/material/input";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 // Importa el servicio
 
@@ -66,7 +82,11 @@ import {CreateUserComponent} from "./iam/component/create-user/create-user.compo
     CreateAdminComponent,
     AdminProfileComponent,
     LoginAdminComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    MenuComponent,
+    MonitoringComponent,
+    MonitoringCompanieComponent,
+    ContractsComponent
 
 
 
@@ -74,18 +94,35 @@ import {CreateUserComponent} from "./iam/component/create-user/create-user.compo
 
 
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
-    NgOptimizedImage,
-    MatToolbar,
-    MatAnchor,
-    MatCard,
-    MatSnackBarModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+        NgOptimizedImage,
+        MatToolbar,
+        MatAnchor,
+        MatCard,
+        MatSnackBarModule,
+        MatTable,
+        MatButton,
+      MatCardHeader,
+      MatCardContent,
+      MatCardImage,
+      MatCardTitle,
+      HttpClientModule,
+      MatTableModule,
+      MatPaginatorModule,
+      MatSortModule,
+      MatInput,
+      MatFormField,
+      MatLabel,
+      MatButtonModule,
+      MatTableModule,
+      BrowserAnimationsModule,
+      MatCardModule
+    ],
   providers: [SmoothScrollService, provideAnimationsAsync('noop'), provideAnimationsAsync()], // Añade el servicio a los proveedores
   bootstrap: [AppComponent]
 })

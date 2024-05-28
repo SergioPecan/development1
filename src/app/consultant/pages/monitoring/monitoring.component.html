@@ -1,0 +1,21 @@
+<div class="page-header">
+  <h1 class="main-title">Monitoring</h1>
+  <h2 class="sub-title">Companies</h2> <!-- Añade el subtítulo que desees -->
+</div>
+
+<div class="bundle-cards-container">
+  <div class="bundle-card" *ngFor="let companie of companies">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ companie.name }}</mat-card-title>
+        <mat-card-subtitle>Number of Crops: {{ companie.numberCrops }}</mat-card-subtitle>
+        <mat-card-subtitle>Notifications: {{ companie.notifications }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="companie.urlPhoto" alt="{{ companie.name }}">
+      <div class="monitoring-button-container">
+        <button class="monitoring-button">Monitoring</button>
+        <h2 class="espacio">            </h2>
+      </div>
+    </mat-card>
+  </div>
+</div>

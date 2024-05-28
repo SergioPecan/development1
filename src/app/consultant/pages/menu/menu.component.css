@@ -1,0 +1,28 @@
+.custom-button {
+  font-size: 20px; /* Tamaño de fuente más grande */
+  padding: 10px 20px; /* Más espacio interno */
+  border: 2px solid black; /* Borde negro */
+  color: green !important; /* Letras verdes con !important */
+  background-color: white; /* Fondo blanco para mayor contraste */
+  margin-bottom: 10px; /* Espacio entre botones */
+  display: flex; /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  text-align: center; /* Centrar el texto */
+}
+
+.notification-title {
+  color: red; /* Color verde para el título */
+  font-size: 24px; /* Tamaño de fuente más grande */
+  margin-top: 20px; /* Espacio superior */
+  margin-bottom: 20px; /* Espacio inferior */
+  text-align: center; /* Centrar el texto */
+}
+
+.mat-elevation-z8 {
+  margin-top: 20px; /* Espacio superior para la tabla */
+}
+
+mat-form-field {
+  width: 300px;
+}

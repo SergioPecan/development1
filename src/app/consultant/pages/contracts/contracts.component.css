@@ -1,0 +1,49 @@
+.contract-cards-container {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección para que las tarjetas se dispongan una debajo de la otra */
+  align-items: center; /* Centra las tarjetas horizontalmente */
+}
+
+.contract-card {
+  margin: 10px;
+  border: 1px solid black; /* Añadir borde para depuración */
+  width: 80%; /* Ajusta el ancho de las tarjetas según tu preferencia */
+}
+
+.card-title {
+  color: green; /* Cambia el color de los títulos a verde */
+}
+
+.card-image {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  display: block; /* Evita el espacio blanco alrededor de las imágenes */
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+  width: 300px; /* Ajusta este valor según el tamaño deseado de las imágenes */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.main-title {
+  text-align: center; /* Centrar el texto */
+  color: green; /* Color verde */
+  font-size: 2em; /* Tamaño de letra más grande */
+}
+
+.sub-title {
+  text-align: left; /* Alinear el texto a la izquierda */
+  color: green; /* Color verde */
+  font-size: 2em; /* Tamaño de letra más grande */
+}
+
+
+.accept-button {
+  background-color: #4CAF50; /* Color verde para aceptar */
+  color: white;
+  margin: 0 10px; /* Separación horizontal */
+}
+
+.decline-button {
+  background-color: #F44336; /* Color rojo para rechazar */
+  color: white;
+  margin: 0 10px; /* Separación horizontal */
+}
