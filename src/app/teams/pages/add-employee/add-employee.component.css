@@ -1,0 +1,65 @@
+.add-employee-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-employee-container span {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.add-employee-link {
+  color: #3ac12e;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.add-employee-link:hover {
+  text-decoration: underline;
+}
+
+.input-field {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.col-photo {
+  margin: 20px 0;
+}
+
+.col-photo img {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+}
+
+.add-button {
+  margin-top: 20px;
+}
+
+.add-employee-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-employee-button:hover {
+  background-color: #218838;
+}
