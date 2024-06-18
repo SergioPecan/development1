@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "postinstall": "ng build --prod --configuration development",
-     "preinstall": "npm install -g @angular/cli",
+    "postinstall": "ng build -configuration production --aot",
+     "preinstall": "npm install @angular/cli@latest @angular/compiler-cli — save-dev",
     "start": "ng build --watch --configuration development",
-    "build": "ng build --prod",
+    "build": "ng build --configuration production --aot",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
