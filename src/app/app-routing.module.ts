@@ -32,9 +32,9 @@ const routes: Routes = [
   {path:'homepage/crop', component:CropComponent},
   {path:'homepage/crop/new-crop',component:NewCropComponent},
   {path:'homepage/crop/calendar',component: CalendarComponent},
-  { path: 'user', component: UserComponent, canActivate: [AuthUserGuard],children:[
-      //aqui va el interior del componente que vera el usuario
-    ]},
+  {path:'homepage/finance',component:FinanceComponent},
+  {path:'homepage/employee',component:EmployeesListComponent},
+  {path:'homepage/employee/employee-and-teams',component:EmployeesAndTeamsComponent},
   { path: 'admin', component: BoardAdminComponent, canActivate: [AuthGuard], children: [
       { path: 'profile', component: AdminProfileComponent },
       { path: 'create-admin', component: CreateAdminComponent },
@@ -42,11 +42,8 @@ const routes: Routes = [
     ] },
   { path: '**', redirectTo: 'home' },
 
-  {path:'homepage/finance',component:FinanceComponent},
-
-  {path:'homepage/employee',component:EmployeesListComponent},
   {path:'ick',component:AddEmployeeComponent},
-  {path:'homepage/employee/employee-and-teams',component:EmployeesAndTeamsComponent}
+
 ];
 
 @NgModule({
