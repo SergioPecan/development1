@@ -36,7 +36,7 @@ export class LoginComponent {
           });
 
           this.userService.loggedUser = true;
-          this.router.navigate(['/user']);
+          this.router.navigate(['/homepage']);
           console.log('Inicio de sesión exitoso', users[0]);
         } else {
           // Inicio de sesión fallido
