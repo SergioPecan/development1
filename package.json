@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "postinstall": "ng build --prod --configuration development",
-     "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
+     "preinstall": "npm install -g @angular/cli",
     "start": "ng build --watch --configuration development",
     "build": "ng build --prod",
     "watch": "ng build --watch --configuration development",
