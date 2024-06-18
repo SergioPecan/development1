@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "postinstall": "ng build --watch --configuration development",
+    "postinstall": "ng build --configuration development",
     "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
     "start": "ng build --watch --configuration development",
     "build": "ng build",
