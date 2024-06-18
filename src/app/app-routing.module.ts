@@ -34,6 +34,7 @@ const routes: Routes = [
   {path:'homepage/crop/calendar',component: CalendarComponent},
   {path:'homepage/finance',component:FinanceComponent},
   {path:'homepage/employee',component:EmployeesListComponent},
+  {path:'homepage/employee/add-employee',component:AddEmployeeComponent},
   {path:'homepage/employee/employee-and-teams',component:EmployeesAndTeamsComponent},
   { path: 'admin', component: BoardAdminComponent, canActivate: [AuthGuard], children: [
       { path: 'profile', component: AdminProfileComponent },
@@ -41,8 +42,6 @@ const routes: Routes = [
       { path: 'create-user', component: CreateUserComponent }
     ] },
   { path: '**', redirectTo: 'home' },
-
-  {path:'ick',component:AddEmployeeComponent},
 
 ];
 
