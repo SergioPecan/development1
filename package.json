@@ -1,6 +1,7 @@
 {
   "name": "development",
   "version": "0.0.0",
+  "proxy": "https://evening-cove-75289-3dd3b7c57a3c.herokuapp.com/api/v1/crops",
   "scripts": {
     "ng": "ng",
     "postinstall": "ng build --configuration development",
