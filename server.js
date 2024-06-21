@@ -1,8 +1,26 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors')();
-const app = express();
+
 const createError = require('http-errors');
+const { createProxyMiddleware } = require('http-proxy-middleware');
+const {isHttpError} = require("http-errors");
+
+const butter = require('buttercms')('4baadee20ad7800e940fc43c6ca598e46e0d6405');
+butter.page.retrieve('*','hero').then(response => console.log(response.data));
+const app = express();
+
+app.use('/api/v1', createProxyMiddleware({
+  target: 'https://evening-cove-75289-3dd3b7c57a3c.herokuapp.com/', // tu servidor de backend
+  changeOrigin: true, // para manejar el CORS
+  secure: true, // si tu servidor de backend usa HTTPS
+  onProxyReq: function(proxyReq, req, res) {
+    console.log('Original Request: ', req);
+  },
+  onProxyRes: function(proxyRes, req, res) {
+    console.log('Proxy Response: ', proxyRes);
+  }
+}));
 // Serve static files
 app.use(express.static(path.join(__dirname, 'dist/development/browser')));
 // Send all requests to index.html
