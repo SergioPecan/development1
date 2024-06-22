@@ -6,8 +6,6 @@ const createError = require('http-errors');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const {isHttpError} = require("http-errors");
 
-const butter = require('buttercms')('4baadee20ad7800e940fc43c6ca598e46e0d6405');
-butter.page.retrieve('*','hero').then(response => console.log(response.data));
 const app = express();
 
 app.use('/api/v1', createProxyMiddleware({
