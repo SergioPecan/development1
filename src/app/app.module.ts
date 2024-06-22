@@ -17,7 +17,7 @@ import { FooterComponent } from './public/pages/footer/footer.component';
 import { HeaderComponent } from './public/pages/header/header.component';
 import { HomepageComponent } from './public/pages/homepage/homepage.component';
 import { HomeappComponent } from './farmer/pages/homeapp/homeapp.component';
-import { FinanceComponent } from './farmer/pages/finance/finance.component';
+
 import { CropComponent } from './farmer/pages/crop/crop.component';
 import {MatToolbar} from "@angular/material/toolbar";
 import {MatAnchor} from "@angular/material/button";
@@ -36,6 +36,11 @@ import {AdminProfileComponent} from "./iam/component/profile/profile.component";
 import {UserComponent} from "./iam/component/user/user.component";
 import {LoginAdminComponent} from "./iam/component/login-admin/login-admin.component";
 import {CreateUserComponent} from "./iam/component/create-user/create-user.component";
+import { AddFarmerProductComponent } from './sales/pages/add-farmer-product/add-farmer-product.component';
+import { AddSalesComponent } from './sales/pages/add-sales/add-sales.component';
+import { FarmerProductInformationComponent } from './sales/pages/farmer-product-information/farmer-product-information.component';
+import { SalesInformationComponent } from './sales/pages/sales-information/sales-information.component';
+import { SalesOrderListComponent } from './sales/pages/sales-order-list/sales-order-list.component';
 
 // Importa el servicio
 
@@ -53,7 +58,6 @@ import {CreateUserComponent} from "./iam/component/create-user/create-user.compo
     HeaderComponent,
     HomepageComponent,
     HomeappComponent,
-    FinanceComponent,
     CropComponent,
     CalendarComponent,
     NewCropComponent,
@@ -66,7 +70,12 @@ import {CreateUserComponent} from "./iam/component/create-user/create-user.compo
     CreateAdminComponent,
     AdminProfileComponent,
     LoginAdminComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    AddFarmerProductComponent,
+    AddSalesComponent,
+    FarmerProductInformationComponent,
+    SalesInformationComponent,
+    SalesOrderListComponent
 
 
 
