@@ -17,12 +17,12 @@ import { FooterComponent } from './public/pages/footer/footer.component';
 import { HeaderComponent } from './public/pages/header/header.component';
 import { HomepageComponent } from './public/pages/homepage/homepage.component';
 import { HomeappComponent } from './farmer/pages/homeapp/homeapp.component';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { CropComponent } from './farmer/pages/crop/crop.component';
 import {MatToolbar} from "@angular/material/toolbar";
-import {MatAnchor} from "@angular/material/button";
+import {MatAnchor, MatButton} from "@angular/material/button";
 import { CalendarComponent } from './farmer/pages/calendar/calendar.component';
-import {MatCard,MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
+import {MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
 import { NewCropComponent } from './farmer/pages/new-crop/new-crop.component';
 import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
@@ -41,6 +41,7 @@ import { AddSalesComponent } from './sales/pages/add-sales/add-sales.component';
 import { FarmerProductInformationComponent } from './sales/pages/farmer-product-information/farmer-product-information.component';
 import { SalesInformationComponent } from './sales/pages/sales-information/sales-information.component';
 import { SalesOrderListComponent } from './sales/pages/sales-order-list/sales-order-list.component';
+import {MatInputModule} from "@angular/material/input";
 
 // Importa el servicio
 
@@ -93,7 +94,14 @@ import { SalesOrderListComponent } from './sales/pages/sales-order-list/sales-or
     MatToolbar,
     MatAnchor,
     MatCard,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatFormFieldModule,  // añade esta línea
+    MatInputModule,
+    MatButton,
+    MatCardContent,
+    MatCardTitle,
+    MatCardHeader,
+    MatCardActions
   ],
   providers: [SmoothScrollService, provideAnimationsAsync('noop'), provideAnimationsAsync()], // Añade el servicio a los proveedores
   bootstrap: [AppComponent]
