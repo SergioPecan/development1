@@ -39,7 +39,7 @@ const routes: Routes = [
   {path:'homepage/sales/add-sales',component:AddSalesComponent},
   {path:'homepage/sales/farmer-product-information',component:FarmerProductInformationComponent},
   {path:'homepage/sales/sales-information',component:SalesInformationComponent},
-  {path:'homepage/sales/sales-order-list',component:SalesOrderListComponent },
+  {path: 'homepage/sales/sales-order-list/:Id',component:SalesOrderListComponent },
   {path:'homepage/employee',component:EmployeesListComponent},
   {path:'homepage/employee/add-employee',component:AddEmployeeComponent},
   {path:'homepage/employee/employee-and-teams',component:EmployeesAndTeamsComponent},
