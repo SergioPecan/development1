@@ -36,3 +36,9 @@
   margin-top:10px;
   border-spacing: 100px;
 }
+.details{
+  background-color: rgb(135 206 235 / 50%) ;
+  border-radius: 20px;
+  padding:30px 30px;
+  margin-bottom: 30px;
+}

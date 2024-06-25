@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import {Crop} from "../../model/crop.entity";
-
+import {Product} from "../../model/product.entity";
 // Definición de la interfaz Cultivo
 
 @Component({
@@ -10,8 +10,10 @@ import {Crop} from "../../model/crop.entity";
   styleUrls: ['./crop.component.css']
 })
 export class CropComponent {
-  private urlcrops ='http://localhost:3300/cropst';
+  private urlcrops ='https://evening-cove-75289-3dd3b7c57a3c.herokuapp.com/api/v1/crop';
+  private urlprod='https://evening-cove-75289-3dd3b7c57a3c.herokuapp.com/api/v1/product';
   crops: Crop[] = []; // Arreglo para almacenar los datos del crop
+  products:Product[]=[];
 
 
   constructor(private http: HttpClient) {
@@ -20,6 +22,13 @@ export class CropComponent {
 
     });
 
+    this.http.get<Product[]>(this.urlprod).subscribe(data => {
+      this.products = data; //
+
+    });
+
   }
+
+  protected readonly Product = Product;
 }
 

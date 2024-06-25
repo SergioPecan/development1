@@ -1,25 +1,13 @@
 <div class="registercrop-container">
   <h1 class="title">New Crop</h1>
+  <label class="labels">ID:</label>
+  <input class="input-field" [(ngModel)]='id' type="text" placeholder="Insert your crop code">
   <label class="labels">Code:</label>
-  <input class="input-field" [(ngModel)]='code' type="text" placeholder="Insert your crop code">
-
-  <label class="labels">Area:</label>
-  <input class="input-field" [(ngModel)]="area" type="number" placeholder="Insert the area of your crop">
-
-  <label class="labels">Product:</label>
-  <input class="input-field" [(ngModel)]="product" type="text" placeholder="Insert your product">
-
-  <label class="labels">Localization:</label>
-  <input class="input-field" [(ngModel)]="localization" type='text' placeholder="Insert your coordenates of your crop">
-
-  <label class="labels">Status:</label>
-  <input class="input-field" [(ngModel)]="status" type="text" placeholder="Insert the status of your crop">
-
-  <label class="labels">Cost:</label>
-  <input class="input-field" [(ngModel)]="cost" type="number" placeholder="Insert the cost of the crop">
-
-  <label class="labels">Profit:</label>
-  <input class="input-field" [(ngModel)]="profit" type="number" placeholder="Insert your estimated profit">
+  <input class="input-field" [(ngModel)]='code' type="text" placeholder="Insert the codename you assigned to this crop">
+  <label class="labels">Currency:</label>
+  <input class="input-field" [(ngModel)]='currency' type="text" placeholder="Insert the currency of the price you assigned to this crop">
+  <label class="labels">Value:</label>
+  <input class="input-field" [(ngModel)]='value' type="text" placeholder="Insert the value you assigned to this crop">
 
   <button class="register-crop" (click)="register()">Add Crop</button>
 

@@ -7,7 +7,7 @@ import {Crop} from "../model/crop.entity";
   providedIn: 'root'
 })
 export class CropService {
-  private urlcrops ='http://localhost:3300/cropst';
+  private urlcrops ='https://evening-cove-75289-3dd3b7c57a3c.herokuapp.com/api/v1/crop';
 
 
   constructor(private http: HttpClient) { }

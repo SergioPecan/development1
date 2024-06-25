@@ -1,43 +1,24 @@
-
-
 <div class="crop-wrapper">
   <button class="botcrop"  routerLink="/homepage/crop/new-crop">Agregar Cultivo</button>
 
-<div *ngFor="let crop of crops">
-  <div class="headruc">
-
-    <h2 >Ruc: {{crop.ruc}}</h2>
-  </div>
-
-
-  <div class="doblecolumna">
-    <div class="columna1" >
-      <p>Code: {{ crop.code }}</p>
-      <p>Area: {{ crop.area }} m2</p>
-      <p>Product: {{ crop.product }}</p>
-      <p>Localization: {{crop.localization}}</p>
-    </div>
+  <div *ngFor="let product of products">
+    <div *ngFor="let crop of crops"  class="details">
+      <p>Crop code:{{crop.id}} </p>
+      <p>Crop name:{{crop.code}} </p>
+      <p>Crop cost: {{crop.value}} {{crop.currency}}</p>
+      <p>Product Id:{{product.id}}</p>
+      <p>Crop Product Name: {{product.name}}</p>
+      <p>Product Stock: {{product.stockProduct}}</p>
 
 
+      <div>
+        <button class="botcrop" routerLink="/homepage/crop/calendar">Calendar</button>
 
-    <div class="columna2">
-
-      <p>Status: {{crop.status}}</p>
-      <p>Cost: ${{crop.cost}}</p>
-      <p>Profit: ${{crop.profit}}</p>
+        <button class="botcrop">Ask Consultor</button>
+      </div>
     </div>
   </div>
 
-  <div>
-    <button class="botcrop" routerLink="/homepage/crop/calendar">Calendar</button>
-
-    <button class="botcrop">Ask Consultor</button>
-  </div>
-
-
-
-
-</div>
 
 </div>
 
