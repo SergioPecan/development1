@@ -1,0 +1,27 @@
+<h1>Agregar experto en agricultura</h1>
+<form (ngSubmit)="register()">
+  <mat-form-field>
+    <mat-label>RUC</mat-label>
+    <input matInput [(ngModel)]="ruc" name="ruc">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="email" name="email" type="string">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Phone</mat-label>
+    <input matInput [(ngModel)]="phone" name="phone" type="number">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Social Reason</mat-label>
+    <input matInput [(ngModel)]="socialReason" name="socialReason">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Submit</button>
+  <button mat-raised-button color="secondary" routerLink="/homepage">Back</button>
+  <button mat-raised-button color="warn" routerLink="/home">Exit</button>
+</form>
+<app-footer class="footer-full-width"></app-footer>

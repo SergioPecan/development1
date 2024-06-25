@@ -1,0 +1,12 @@
+.footer-full-width {
+  width: 100%;
+  padding: max(1rem, 1vw);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #00576F;
+  color: #fff;
+}

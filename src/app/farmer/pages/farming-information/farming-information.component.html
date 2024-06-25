@@ -1,0 +1,37 @@
+<div class="header">
+  <button mat-raised-button color="secondary" routerLink="/homepage">Volver</button>
+  <h1>Listas de expertos en agricultura</h1>
+  <button mat-raised-button color="warn" routerLink="/home">Salir</button>
+</div>
+
+<mat-table [dataSource]="farmingList">
+
+  <!-- RUC Column -->
+  <ng-container matColumnDef="ruc">
+    <mat-header-cell *matHeaderCellDef> RUC </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.ruc}} </mat-cell>
+  </ng-container>
+
+  <!-- Email Column -->
+  <ng-container matColumnDef="email">
+    <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+  </ng-container>
+
+  <!-- Phone Column -->
+  <ng-container matColumnDef="phone">
+    <mat-header-cell *matHeaderCellDef> Phone </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.phone}} </mat-cell>
+  </ng-container>
+
+  <!-- Social Reason Column -->
+  <ng-container matColumnDef="socialReason">
+    <mat-header-cell *matHeaderCellDef> Social Reason </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element.socialReason}} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+
+<app-footer class="footer-full-width"></app-footer>
