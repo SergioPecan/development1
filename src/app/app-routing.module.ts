@@ -9,7 +9,7 @@ import {NewCropComponent} from "./farmer/pages/new-crop/new-crop.component";
 import {CalendarComponent} from "./farmer/pages/calendar/calendar.component";
 import {EmployeesListComponent} from "./teams/pages/employees-list/employees-list.component";
 import {AddEmployeeComponent} from "./teams/pages/add-employee/add-employee.component";
-import {EmployeesAndTeamsComponent} from "./teams/pages/employees-and-teams/employees-and-teams.component";
+import {AddFarmingComponent} from "./farmer/pages/add-farming/add-farming.component";
 import {BoardAdminComponent} from "./iam/component/board-admin/board-admin.component";
 import {AuthUserGuard} from "./iam/service/auth.guard";
 import { AddFarmerProductComponent } from './sales/pages/add-farmer-product/add-farmer-product.component';
@@ -18,7 +18,7 @@ import { FarmerProductInformationComponent } from './sales/pages/farmer-product-
 import { SalesInformationComponent } from './sales/pages/sales-information/sales-information.component';
 import { SalesOrderListComponent } from './sales/pages/sales-order-list/sales-order-list.component';
 
-
+import {FarmingInformationComponent} from "./farmer/pages/farming-information/farming-information.component";
 import { AdminProfileComponent } from './iam/component/profile/profile.component';
 import { CreateAdminComponent } from './iam/component/create-admin/create-admin.component';
 
@@ -30,19 +30,19 @@ const routes: Routes = [
   {path: 'home', component: HomepageComponent },
   {path: 'login', component: LoginComponent },
   {path: 'signup', component: SingupComponent},
-
+  {path:'homepage/farming/farming-information',component:FarmingInformationComponent},
   {path:'homepage', component:HomeappComponent},
   {path:'homepage/crop', component:CropComponent},
   {path:'homepage/crop/new-crop',component:NewCropComponent},
   {path:'homepage/crop/calendar',component: CalendarComponent},
   {path:'homepage/sales/add-farmer-product',component:AddFarmerProductComponent},
+  {path:'homepage/farming/add-farming',component:AddFarmingComponent},
   {path:'homepage/sales/add-sales',component:AddSalesComponent},
   {path:'homepage/sales/farmer-product-information',component:FarmerProductInformationComponent},
   {path:'homepage/sales/sales-information',component:SalesInformationComponent},
   {path: 'homepage/sales/sales-order-list/:Id',component:SalesOrderListComponent },
   {path:'homepage/employee',component:EmployeesListComponent},
   {path:'homepage/employee/add-employee',component:AddEmployeeComponent},
-  {path:'homepage/employee/employee-and-teams',component:EmployeesAndTeamsComponent},
   { path: 'admin', component: BoardAdminComponent, canActivate: [AuthGuard], children: [
       { path: 'profile', component: AdminProfileComponent },
       { path: 'create-admin', component: CreateAdminComponent },

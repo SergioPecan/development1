@@ -28,7 +28,7 @@ import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {AddEmployeeComponent} from "./teams/pages/add-employee/add-employee.component";
 import {EmployeeInformationComponent} from "./teams/pages/employee-information/employee-information.component";
-import {EmployeesAndTeamsComponent} from "./teams/pages/employees-and-teams/employees-and-teams.component";
+import { MatCardModule } from '@angular/material/card';
 import {EmployeesListComponent} from "./teams/pages/employees-list/employees-list.component";
 import {BoardAdminComponent} from "./iam/component/board-admin/board-admin.component";
 import {CreateAdminComponent} from "./iam/component/create-admin/create-admin.component";
@@ -43,6 +43,18 @@ import { SalesInformationComponent } from './sales/pages/sales-information/sales
 import { SalesOrderListComponent } from './sales/pages/sales-order-list/sales-order-list.component';
 import {MatInputModule} from "@angular/material/input";
 
+import {Farming} from "./farmer/model/farming.entity";
+import { AddFarmingComponent } from './farmer/pages/add-farming/add-farming.component';
+import { FarmingInformationComponent } from './farmer/pages/farming-information/farming-information.component';
+import {
+  MatCell, MatCellDef, MatColumnDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
+  MatHeaderRow,
+  MatHeaderRowDef,
+  MatRow, MatRowDef,
+  MatTable, MatTableModule
+} from "@angular/material/table";
 // Importa el servicio
 
 @NgModule({
@@ -64,7 +76,6 @@ import {MatInputModule} from "@angular/material/input";
     NewCropComponent,
     AddEmployeeComponent,
     EmployeeInformationComponent,
-    EmployeesAndTeamsComponent,
     EmployeesListComponent,
     UserComponent,
     BoardAdminComponent,
@@ -76,7 +87,10 @@ import {MatInputModule} from "@angular/material/input";
     AddSalesComponent,
     FarmerProductInformationComponent,
     SalesInformationComponent,
-    SalesOrderListComponent
+    SalesOrderListComponent,
+
+    AddFarmingComponent,
+      FarmingInformationComponent
 
 
 
@@ -101,7 +115,19 @@ import {MatInputModule} from "@angular/material/input";
     MatCardContent,
     MatCardTitle,
     MatCardHeader,
-    MatCardActions
+    MatCardActions,
+    MatCardModule,
+    MatTable,
+    MatHeaderCell,
+    MatCell,
+    MatHeaderRow,
+    MatRow,
+    MatHeaderCellDef,
+    MatHeaderRowDef,
+    MatRowDef,
+    MatColumnDef,
+    MatCellDef,
+    MatTableModule,
   ],
   providers: [SmoothScrollService, provideAnimationsAsync('noop'), provideAnimationsAsync()], // Añade el servicio a los proveedores
   bootstrap: [AppComponent]

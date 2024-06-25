@@ -1,15 +1,48 @@
 <div class="employee-information-container">
-  <span>Employees</span>
-
-  <div class="employee-information-container">
-    <div class="col1" *ngFor="let employee of employees">
-      <p>Name: {{ employee.firstName }}</p>
-      <p>Last Name: {{ employee.lastName }}</p>
-      <p>Age: {{ employee.age }}</p>
-      <p>ID: {{ employee.dni }}</p>
-      <p>Charge: {{ employee.charge }}</p>
-      <p>Salary: {{ employee.salary }}</p>
-      <img ngSrc="assets/Images/plagas.jpg" alt="User Icon" height="3456" width="5184">
-    </div>
+  <div class="header">
+    <button routerLink="/homepage">Back to Homepage</button>
+    <span>Employee Information</span>
+  </div>
+  <div class="employee-information-grid" *ngFor="let employee of employees">
+    <mat-card class="employee-card">
+      <mat-card-content>
+        <!-- Agrega un formulario para editar el empleado -->
+        <form *ngIf="employee.id === editingEmployeeId" #productForm="ngForm">
+          <label>
+            First Name:
+            <input [(ngModel)]="editingEmployee.firstName" name="money">
+          </label>
+          <label>
+            Last Name:
+            <input [(ngModel)]="editingEmployee.lastName" name="amount">
+          </label>
+          <label>
+            Email:
+            <input [(ngModel)]="editingEmployee.email" name="start">
+          </label>
+          <label>
+            Work Position:
+            <input [(ngModel)]="editingEmployee.workPosition" name="end">
+          </label>
+          <label>
+            Salary:
+            <input [(ngModel)]="editingEmployee.salary" name="quantityProduct">
+          </label>
+          <label>
+            Phone:
+            <input [(ngModel)]="editingEmployee.phone" name="quantityProduct">
+          </label>
+          <label>
+            Age:
+            <input [(ngModel)]="editingEmployee.age" name="quantityProduct">
+          </label>
+          <button (click)="acceptChanges()">Accept Changes</button>
+        </form>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button (click)="startEditing(employee)">Update Employee</button>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>
+<app-footer class="footer-full-width"></app-footer>

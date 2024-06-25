@@ -1,13 +1,24 @@
-<div class="employee-wrapper">
-  <span>Employees</span>
-  <button class="add-employee" routerLink="/homepage/employee/add-employee">Add employee</button>
-
-  <div class="employee-list-container">
-    <div class="col1" *ngFor="let employee of employees">
-      <p>ID: {{ employee.dni }}</p>
-      <p>Charge: {{ employee.charge }}</p>
-      <button class="view-teams" routerLink="/homepage/employee/employee-and-teams">View Teams</button>
-      <button class="information">Information</button>
-    </div>
+<div class="container">
+  <div class="header">
+    <span>Employees</span>
+    <button mat-raised-button color="primary" routerLink="/homepage">Back to Homepage</button>
+    <button mat-raised-button color="primary" class="add-employee" routerLink="/homepage/employee/add-employee">Add employee</button>
+  </div>
+  <div class="form-container" *ngFor="let employee of employees">
+    <mat-card class="employee-card">
+      <mat-card-header>
+        <p>Name: {{employee.name}} </p>
+      </mat-card-header>
+      <mat-card-content>
+        <p>ID: {{employee.id}}</p>
+        <p>Email: {{employee.email}}</p>
+        <p>Employee Details: {{employee.employeeDetails}}</p>
+        <button mat-button (click)="deleteEmployee(employee.id)">Delete</button>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="information" routerLink="/homepage/employee/employee-information">Information</button>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>
+<app-footer class="footer-full-width"></app-footer>

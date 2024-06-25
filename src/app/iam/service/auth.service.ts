@@ -15,7 +15,7 @@ export class AuthService {
   loggedUser = false;
   admin: any = null; // Almacena los detalles del administrador
   user: any = null; // Almacena los detalles del usuario
-  private apiUrl = 'http://localhost:3000/api/v1/';
+  private apiUrl = 'https://agroges-9e1d75102c63.herokuapp.com:2000/api/v1/';
   currentAdminSubject: BehaviorSubject<Admin | null> = new BehaviorSubject<Admin | null>(null);
   currentAdmin = this.currentAdminSubject.asObservable();
 

@@ -58,3 +58,33 @@
 
 }
 
+.sales-orders-title {
+  font-size: 1.2em; /* Ajusta el tamaño del texto del título */
+}
+
+.sales-orders-buttons {
+  display: flex; /* Hace que los botones se dispongan en una línea */
+  flex-direction: column; /* Hace que los botones se apilen verticalmente */
+  gap: 1px; /* Añade un espacio entre los botones */
+}
+.sales-orders-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px; /* Ajusta el padding para cambiar el tamaño del botón */
+  gap: 10px;
+}
+.farming-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.farming-title {
+  text-align: center;
+  color: #00576F;
+}
+
+.botoneshomeapp {
+  margin: 0 10px;
+}

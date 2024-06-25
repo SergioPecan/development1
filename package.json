@@ -6,6 +6,7 @@
     "ng": "ng",
     "postinstall": "ng build --configuration development",
     "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
+    "heroku-postbuild": "json-server --watch server/db.json --port 2000",
     "start": "ng build --watch --configuration development",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",

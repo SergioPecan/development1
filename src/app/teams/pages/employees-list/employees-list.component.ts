@@ -1,19 +1,41 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Employee} from "../../model/employee.entity";
-import {HttpClient} from "@angular/common/http";
-import {Router} from "@angular/router";
+import {EmployeeService} from "../../service/employee.service";
 
 @Component({
   selector: 'app-employees-list',
   templateUrl: './employees-list.component.html',
   styleUrl: './employees-list.component.css'
 })
-export class EmployeesListComponent {
-  employees: Employee[] = [];
+export class EmployeesListComponent implements OnInit{
+  employees: any[] = [];
 
-  constructor(private http: HttpClient, private router: Router) {
-    this.http.get<Employee[]>('http://localhost:3200/employees').subscribe(data => {
+  constructor(private employeeService: EmployeeService) { }
+
+  ngOnInit() {
+    this.employeeService.getEmployees().subscribe(data => {
       this.employees = data;
-    })
+    });
+  }
+  getEmployees() {
+    this.employeeService.getEmployees()
+      .subscribe(data => {
+        this.employees = data;
+        },
+        error => {
+        console.error(error);
+        }
+      );
+  }
+
+  deleteEmployee(id: number) {
+    this.employeeService.deleteEmployee(id)
+      .subscribe(() => {
+        this.getEmployees();
+      },
+          error => {
+        console.error(error);
+      }
+    );
   }
 }

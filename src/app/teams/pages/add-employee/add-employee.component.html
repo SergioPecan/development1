@@ -1,18 +1,35 @@
 <div class="add-employee-container">
   <span>Add Employee</span>
-  <a href="#" class="add-employee-link">Add Employee</a>
-  <input class="input-field" [(ngModel)]="name" type="text" placeholder="Name">
+  <label class="labels">ID Document:</label>
+  <input class="input-field" [(ngModel)]="idDocument" type="text" placeholder="ID">
+
+  <label class="labels">First Name:</label>
+  <input class="input-field" [(ngModel)]="firstName" type="text" placeholder="First Name">
+
+  <label class="labels">Last Name:</label>
   <input class="input-field" [(ngModel)]="lastName" type="text" placeholder="Last Name">
-  <input class="input-field" [(ngModel)]="age" type="text" placeholder="Age">
-  <input class="input-field" [(ngModel)]="dni" type="text" placeholder="ID">
-  <input class="input-field" [(ngModel)]="charge" type="text" placeholder="Charge">
+
+  <label class="labels">Email:</label>
+  <input class="input-field" [(ngModel)]="email" type="text" placeholder="Age">
+
+  <label class="labels">Work Position:</label>
+  <input class="input-field" [(ngModel)]="workPosition" type="text" placeholder="Charge">
+
+  <label class="labels">Salary:</label>
   <input class="input-field" [(ngModel)]="salary" type="text" placeholder="Salary">
 
+  <label class="labels">Phone:</label>
+  <input class="input-field" [(ngModel)]="phone" type="text" placeholder="Salary">
+
+  <label class="labels">Age:</label>
+  <input class="input-field" [(ngModel)]="age" type="text" placeholder="Age">
+
   <div class="col-photo">
-    <img ngSrc="assets/Images/plagas.jpg" alt="User Icon0" height="3456" width="5184">
+    <img ngSrc="assets/Images/UserIcon.png" alt="User Icon0" height="3456" width="5184">
   </div>
 
   <div class="add-button">
-    <button class="add-employee-button">Add</button>
+    <button class="add-employee-button" (click)="register()">Add</button>
   </div>
 </div>
+<app-footer class="footer-full-width"></app-footer>
